@@ -10,4 +10,11 @@
      .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     margin: 15px 15px 15px 15px;
     color: #008080;
+    border: 1px;
+    border-color: #008b8b;
+}
+
+header {
+    margin: 1% 10% 0 10%;
+    background-color: #dcdcdc;
 }
