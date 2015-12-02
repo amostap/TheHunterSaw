@@ -15,26 +15,12 @@
      .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
  
     z-index: 5;
-    margin: 15px 15px 15px 15px;
-    border-color: #008b8b;
-    color: white;
-}
-
-nav navbar-nav brand-right {
-
-    color: white;
-}
-
-nav.a navbar-nav.a brand-right.a {
-
-    color: white;
 }
 
 header {
 
     margin: 0 0 0 0;
-    z-index: 4;
-    width: 90%;
+    width: 100%;
 }
 
 html {
@@ -47,11 +33,16 @@ html {
 
 }
 
-#transparent{
+#transparent {
+    z-index: 4;
 
+    background: #000000;
     background: rgba(0,0,0,0.7);
+    -webkit-filter: alpha(opacity=60);
+    -moz-filter: alpha(opacity=60);
+    -o-filter: alpha(opacity=60);
     filter: alpha(opacity=60); /* For IE8 and earlier */
-    height: 150px;
+    height: 100px;
     width: 90%;
 }
 
@@ -59,4 +50,9 @@ html {
 
 .navbar-nav > li > a {
     color: ghostwhite;
+}
+
+.col-lg-push-2 {
+    left: 29%; /* СДЕЛАТЬ ЧТО ТО С ЭТОЙ ХУЙНЕЙ
+    */
 }
