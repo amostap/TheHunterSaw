@@ -75,6 +75,8 @@
     <Content Include="css\css.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\background.jpg" />
+    <Content Include="img\Untitled-1.jpg" />
+    <Content Include="img\Эксклюзивный представитель в Украине %28merged%29.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="packages.config" />
