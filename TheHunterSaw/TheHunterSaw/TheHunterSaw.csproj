@@ -79,7 +79,7 @@
     <Content Include="img\Slide-2.jpg" />
     <Content Include="img\Slide-3.jpg" />
     <Content Include="img\Untitled-1.jpg" />
-    <Content Include="img\Эксклюзивный представитель в Украине %28merged%29.png" />
+    <Content Include="img\Logo.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="packages.config" />

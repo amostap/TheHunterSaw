@@ -1,15 +1,10 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
 
+
 body {
     font-family: 'PT Sans', sans-serif;
     background-color: #12131b;
-    min-height: 5000px;
-}
 
-
-header {
-    margin: 0 0 0 0;
-    font-size: 20px;     
 }
 
 
@@ -24,19 +19,53 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     height: 90px;
     width: 100%;
+    z-index: 10;
 }
 
+.navbar-default {
+	background: rgba(7,8,11,1);
+    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
+    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
 
+    width: 100%;
+    z-index: 1;
+    height: auto !important; 
+    border: hidden;
+}
 
-.navbar-nav > li > a {
+#myNavbar {
+    
+    height: 90px;
+    width: 1170px;
     color: white;
-    padding-top: 13px;
-    padding-bottom: 10px;
+    font-size: 16px;
+    z-index: 100;
 }
 
+#phone_numbers {
 
-.nav > li > a:focus, .nav > li > a:hover {
-    text-decoration: none;
-    background-color: rgba(7,8,11, 0);
-    color: #ffee03;
+    position: relative;
+    color: white;
+    font-size:14px;
 }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: #FEEE03;
+	background-color: transparent;
+}
+
+.navbar-collapse.collapse {
+	display: block !important;
+	height: auto !important; 
+	padding-bottom: 0;
+	overflow: visible !important;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: none;
+}
+
