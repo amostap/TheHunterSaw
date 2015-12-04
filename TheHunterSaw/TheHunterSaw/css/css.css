@@ -2,70 +2,94 @@
 
 
 body {
-    font-family: 'PT Sans', sans-serif;
-    background-color: #12131b;
-
+	font-family: 'PT Sans', sans-serif;
+	background-color: #12131b;
 }
 
 
 #transparent {
-
-    background: rgba(7,8,11,1);
-    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
-    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
-    height: 90px;
-    width: 100%;
-    z-index: 10;
+	background: #07080b;
+	background: rgba(7,8,11,1);
+	background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
+	background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+	height: 90px;
+	width: 100%;
+	z-index: 10;
 }
 
 .navbar-default {
+	background: #07080b;
 	background: rgba(7,8,11,1);
-    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
-    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+	background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
+	background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
 
-    width: 100%;
-    z-index: 1;
-    height: auto !important; 
-    border: hidden;
-}
-
-#myNavbar {
-    
-    height: 90px;
-    width: 1170px;
-    color: white;
-    font-size: 16px;
-    z-index: 100;
-}
-
-#phone_numbers {
-
-    position: relative;
-    color: white;
-    font-size:14px;
-}
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-	color: #FEEE03;
-	background-color: transparent;
-}
-
-.navbar-collapse.collapse {
-	display: block !important;
-	height: auto !important; 
-	padding-bottom: 0;
-	overflow: visible !important;
+	width: 100%;
+	z-index: 1;
+	border: none;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: none;
+}
+
+.navbar-nav > li > a {
+    padding-top: 17px;
+    padding-bottom: 8px;
+	text-align: center;
+}
+
+#phone_numbers {
+	font-size: 14px;
+}
+
+#myNavbar {
+	font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: yellow;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: transparent;
+}
+
+.btn-md.round {
+	-ms-border-radius: 24px;
+	border-radius: 24px;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	border-radius: 25px;
+	margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #151620;
+	border-color: #151620;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-right: 5px;
+    margin-left: 5px;
+    align-items: center;
 }
 
