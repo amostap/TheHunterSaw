@@ -55,7 +55,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-	color: yellow;
+    color: #FFEE02;
 	background-color: transparent;
 }
 
@@ -74,8 +74,8 @@ body {
 
 .btn-success {
 	color: #fff;
-	background-color: #5cb85c;
-	border-color: #4cae4c;
+	background-color: #15C242;
+	border-color: #15C242;
 	border-radius: 25px;
 	margin-top: 10px;
     margin-right: 5px;
@@ -84,8 +84,8 @@ body {
 
 .btn-info {
 	color: #fff;
-	background-color: #151620;
-	border-color: #151620;
+	background-color: #30373F;
+	border-color: #30373F;
 	border-radius: 25px;
 	margin-top: 10px;
 	margin-right: 5px;
@@ -93,12 +93,6 @@ body {
     align-items: center;
 }
 
-.carousel-caption {
-	right: 20%;
-	left: 20%;
-	padding-bottom: 15px;
-	z-index: 1;
-}
 
 .carousel-indicators {
 	position: absolute;
@@ -110,6 +104,11 @@ body {
 	margin-left: -30%;
 	text-align: center;
 	list-style: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	color: #FFEE02;
+	background-color: transparent;
 }
 
 .carousel-caption {
@@ -141,3 +140,11 @@ body {
     min-height: 500px;
     width: 100%;
 }
+
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    -webkit-filter: gray;
+    filter: gray; 
+}
+
