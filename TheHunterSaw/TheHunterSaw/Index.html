@@ -9,19 +9,25 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet" />
-    <script src="js/google.js"></script>
 
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <!--ЛОМАЛО НАФИГ СЛАЙДЕР-->
+    <!--    <script style="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+    </script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 
 </head>
-<body data-target=".navbar" data-spy="scroll">
+<body data-target=".navbar" data-offset="200" data-spy="scroll">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -40,29 +46,27 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav navbar-right" id="phone_numbers">
-                    <li><a href=""><strong>ЗАКАЗАТЬ:</strong></a></li>
-                    <li><button class="btn btn-md btn-info"><strong>+38(066)567-99-89</strong></button></li>
-                    <li><button class="btn btn-md btn-info"><strong>+38(066)567-99-89</strong></button></li>
-                    <li><button class="btn btn-md btn-info"><strong>+38(066)567-99-89</strong></button></li>
-                    <li><button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"><strong>ОБРАТНЫЙ ЗВОНОК</strong></button></li>
+                    <li><a href=""> ЗАКАЗАТЬ: </a></li>
+                    <li><a href="tel:555-555-5555">555-555-5555</a></li>
+                    <li><button class="btn btn-md btn-info"> +38(066)567-99-89 </button></li>
+                    <li><button class="btn btn-md btn-info"> +38(066)567-99-89 </button></li>
+                    <li><button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"> ОБРАТНЫЙ ЗВОНОК </button></li>
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#saw"><strong>ПИЛЫ</strong></a></li>
-                    <li><a href="#about"><strong>О НАС</strong></a></li>
-                    <li><a href="#how"><strong>КАК ЗАКАЗАТЬ</strong></a></li>
-                    <li><a href="#adding"><strong>ПРЕИМУЩЕСТВА</strong></a></li>
-                    <li><a href="#garanty"><strong>ГАРАНТИИ</strong></a></li>
-                    <li><a href="#feedback"><strong>ОТЗЫВЫ</strong></a></li>
-                    <li><a href="#contacts"><strong>КОНТАКТЫ</strong></a></li>
+                <ul class="nav navbar-nav navbar-right navmenu">
+                    <li><a href="#saw">ПИЛЫ</a></li>
+                    <li><a href="#about">О НАС</a></li>
+                    <li><a href="#how">КАК ЗАКАЗАТЬ</a></li>
+                    <li><a href="#adding"> ПРЕИМУЩЕСТВА </a></li>
+                    <li><a href="#garanty"> ГАРАНТИИ </a></li>
+                    <li><a href="#feedback"> ОТЗЫВЫ </a></li>
+                    <li><a href="#contacts"> КОНТАКТЫ </a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!-- Слайдер -->
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -85,16 +89,18 @@
             <div class="item">
                 <img src="img/Slide-2.jpg" />
                 <div class="carousel-caption">
-                    <h3>Chania</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    <h3>НОВОГОДНЯЯ РАСПРОДАЖА</h3>
+                    <h3>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h3>
+                    <p>ТОЛЬКО У НАС БЛА БЛА БЛА</p>
                 </div>
             </div>
 
             <div class="item">
                 <img src="img/Slide-3.jpg" />
                 <div class="carousel-caption">
-                    <h3>Chania</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    <h3>НОВОГОДНЯЯ РАСПРОДАЖА</h3>
+                    <h3>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h3>
+                    <p>ТОЛЬКО У НАС БЛА БЛА БЛА</p>
                 </div>
             </div>
 
@@ -111,56 +117,75 @@
         </a>
     </div>
 
-
     <!-- Блок на слайдере -->
-    <div class="container-fluid">
+    <div class="container" id="transparentContainer">
         <div class="row">
             <div class="col-lg-1">
-
+                <img src="img/New_logo.png" />
             </div>
             <div class="col-lg-2">
-                <pre>
-                   МЕСЯЦЕВ
-                </pre>
+                МЕСЯЦЕВ
+                ГАРАНТИИ
+            </div>
+            <div class="col-lg-1 .New_logo">
+                <img src="img/New_logo.png" />
+            </div>
+            <div class="col-lg-2">
+                БЕСПЛАТНАЯ ДОСТАВКА
+            </div>
+            <div class="col-lg-1">
+                <img src="img/New_logo.png" />
+            </div>
+            <div class="col-lg-2">
+                ОПЛАТА ПРИ ПОЛУЧЕНИИ
+            </div>
+            <div class="col-lg-1">
+                <img src="img/New_logo.png" />
+            </div>
+            <div class="col-lg-2">
+                КОМПЛЕКТАЦИЯ: STIHL,OREGON
             </div>
 
         </div>
     </div>
 
     <!-- Наши пилы -->
-
     <div id="saw" class="container-fluid text-center">
-        <h2><strong>НАШИ ПИЛЫ</strong></h2>
+        <div class="row">
+            <h2> НАШИ ПИЛЫ </h2>
 
-        <br>
-        <div class="row slideanim slide">
+            <br>
+            <div class="row slideanim slide">
 
-        </div>
-        <br><br>
-        <div class="row slideanim slide">
+            </div>
+            <br><br>
+            <div class="row slideanim slide">
 
+            </div>
         </div>
     </div>
 
     <!-- Почему нам доверяют -->
-
     <div id="about" class="container-fluid text-center">
-        <h2><strong>ПОЧЕМУ НАМ ДОВЕРЯЮТ</strong></h2>
+        <div class="row">
 
-        <br>
-        <div class="row slideanim slide">
+            <h2> ПОЧЕМУ НАМ ДОВЕРЯЮТ </h2>
 
-        </div>
-        <br><br>
-        <div class="row slideanim slide">
+            <br>
+            <div class="row slideanim slide">
 
+            </div>
+            <br><br>
+            <div class="row slideanim slide">
+
+            </div>
         </div>
     </div>
 
     <!-- Схема работы с нами -->
 
     <div id="how" class="container-fluid text-center">
-        <h2><strong>СХЕМА РАБОТЫ С НАМИ</strong></h2>
+        <h2> СХЕМА РАБОТЫ С НАМИ </h2>
 
         <br>
         <div class="row slideanim slide">
@@ -175,7 +200,7 @@
 
     <!-- Преймущества -->
     <div id="adding" class="container-fluid text-center">
-        <h2><strong>ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER</strong></h2>
+        <h2> ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER </h2>
 
         <br>
         <div class="row slideanim slide">
@@ -190,7 +215,7 @@
 
     <!-- Гарантии -->
     <div id="garanty" class="container-fluid text-center">
-        <h2><strong>ГАРАНТИИ</strong></h2>
+        <h2> ГАРАНТИИ </h2>
 
         <br>
         <div class="row slideanim slide">
@@ -206,7 +231,7 @@
     <!-- Отзывы -->
     <div id="feedback" class="container-fluid text-center">
         <h2>
-            <strong>ОТЗЫВЫ</strong>
+            ОТЗЫВЫ
         </h2>
 
         <br>
@@ -221,7 +246,7 @@
 
     <!-- Контакты -->
     <div id="contacts" class="container-fluid text-center">
-        <h2><strong>КОНТАКТЫ</strong></h2>
+        <h2> КОНТАКТЫ </h2>
 
         <br>
         <div class="row slideanim slide">
@@ -239,48 +264,60 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-                </div>
+
                 <div class="modal-body">
+
+                    <h4>ОБРАТНЫЙ ЗВОНОК</h4>
+
                     <form role="form">
                         <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                            <input type="number" class="form-control" id="psw" placeholder="How many?">
+                            <label for="psw">Ваше имя</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Ваше имя">
                         </div>
                         <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            <label for="usrname">Номер телефона</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Номер телефона">
                         </div>
-                        <button type="submit" class="btn btn-block">
-                            Pay
-                            <span class="glyphicon glyphicon-ok"></span>
+                        <button type="submit" class="btn btn-success">
+                            ОТПРАВИТЬ ЗАПРОС
                         </button>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                        <span class="glyphicon glyphicon-remove"></span> Cancel
-                    </button>
-                    <p>Need <a href="#">help?</a></p>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Footer-->
-    <footer class="container-fluid bg-6 text-center">
-        <p>Design by WizardStudio <a href="http://wizard-studio.net/">wizard-studio.net</a></p>
-        <a href="/"><img src="/wp-content/themes/wizzard/img/logotip.png" alt="#" height="40" width="227"></a>
+    <footer class="container bg-6 text-center">
+        <p>
+            Design by WizardStudio <a href="http://wizard-studio.net/">wizard-studio.net</a>
+        </p>
     </footer>
 
+    <script>
+        jQuery(document).ready(function () {
+            /**
+             * Scrolls smoothly to a specified element.
+             *
+             * @param target_element
+             * @returns {boolean}
+             */
+            function smoothScrollTo(target_element) {
+                jQuery("html, body").animate({
+                    scrollTop: (jQuery(target_element).offset().top)
+                }, 1000);
+                return false;
+            }
+        });
+    </script>
+
+    <!-- JAVA SCRIPTS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 </body>
 </html>

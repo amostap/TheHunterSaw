@@ -74,6 +74,9 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\css.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\About-us-back.jpg" />
+    <Content Include="img\Hunter-benefits-back.jpg" />
+    <Content Include="img\New_logo.png" />
     <Content Include="img\phone_iphone.svg" />
     <Content Include="img\Slide-1.jpg" />
     <Content Include="img\Slide-2.jpg" />
@@ -82,7 +85,7 @@
     <Content Include="img\Logo.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\google.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

@@ -1,20 +1,23 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
 
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     background-color: #12131b;
 }
 
-
 #transparent {
     background: #07080b;
     background: rgba(7,8,11,1);
-    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
-    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
+    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: -o-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: linear-gradient(to bottom, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     height: 90px;
     width: 100%;
@@ -24,14 +27,17 @@ body {
 .navbar-default {
     background: #07080b;
     background: rgba(7,8,11,1);
-    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
-    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: -o-linear-gradient(top, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
-    background: linear-gradient(to bottom, rgba(7,8,11,1) 0%, rgba(21,22,32,0.75) 100%);
+    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
+    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: -o-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    background: linear-gradient(to bottom, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     width: 100%;
-    z-index: 2;
+    z-index: 20;
     border: none;
 }
 
@@ -39,31 +45,45 @@ body {
     max-height: none;
 }
 
-.navbar-nav > li > a {
-    padding-top: 17px;
-    padding-bottom: 8px;
-    text-align: center;
-}
 
 #phone_numbers {
     font-size: 14px;
 }
 
-#myNavbar {
-    font-size: 16px;
-}
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #FFEE02;
-    background-color: transparent;
-}
-
 .navbar-default .navbar-nav > li > a {
+    font-weight: 700;
+    padding-top: 17px;
+    padding-bottom: 8px;
+    text-align: center;
     color: white;
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    -ms-transition: color 1s ease-in-out;
+    -o-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
 }
+
+    .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+        color: #FFEE02;
+        background-color: transparent;
+    }
+
+     .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:active {
+        color: #FFEE02;
+        background-color: transparent;
+         border: none;
+    }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
+}
+
+.btn {
+    -webkit-transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+    -ms-transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
 }
 
 .btn-md.round {
@@ -89,20 +109,18 @@ body {
     margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
-    align-items: center;
 }
 
-
 .carousel-indicators {
-    position: absolute;
-    bottom: 137px;
-    left: 90%;
-    z-index: 1;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
+	position: absolute;
+	bottom: 150px;
+	left: 97%;
+	z-index: 15;
+	width: 50%;
+	padding-left: 0;
+	/* margin-left: -30%; */
+	text-align: center;
+	list-style: none;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
@@ -110,49 +128,101 @@ body {
     background-color: transparent;
 }
 
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 450px;
-    left: 15%;
-    z-index: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
 .h2, h2 {
-    font-size: 28px;
     color: white;
-    margin-top: 60px;
+    margin: 20px 20px 20px 20px;
 }
 
-#services {
-    min-height: 500px;
-    width: 100%;
+.navbar-right {
+    float: right !important;
+    margin-right: 0;
 }
 
-#googleMap {
-    width: 100%; /* Span the entire width of the screen */
-    height: 400px; /* Set the height to 400 pixels */
-    -webkit-filter: gray;
-    filter: gray;
+.New_logo {
+    background-image: url("New_logo.png");
+    position: absolute;
+    left: 378px;
+    top: 734px;
+    width: 45px;
+    height: 44px;
+    z-index: 33;
 }
 
-.bg-4 {
-    background-color: #2f2f2f;
-    color: #ffffff;
+.container-fluid {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1000px;
 }
 
+#about {
+    background: url('../img/About-us-back.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#adding {
+    background: url('../img/Hunter-benefits-back.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+	/* right: 20%; */
+	/* left: -20%; */
+	/* padding-bottom: 30px; */
+	color: yellow;
+	z-index: 1;
+	top: 30%;
+	height: 300px;
+	width: 400px;
+	border: solid;
+	padding: 20px 20px 20px 20px;
+}
+/* Всплывающее окно */
 .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
+    background-color: white;
+    color: #525568 !important;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    width: 400px;
+    height: 300px;
+
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+
+    width: 400px;
+    height: 300px;
+
 }
 
 .modal-header, .modal-body {
-    padding: 40px 50px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+    align-items: center;
+
+}
+
+#transparentContainer {
+    color: white;
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	margin: 15px 15px 15px 0;
+	top: 787px;
+	border: solid;
 }
