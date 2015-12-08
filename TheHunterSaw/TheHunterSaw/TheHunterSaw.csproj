@@ -112,6 +112,10 @@
     <Content Include="img\Untitled-1.jpg" />
     <Content Include="img\Logo.png" />
     <Content Include="img\ZOOMER.png" />
+    <Content Include="img\Бесплатная доставка.png" />
+    <Content Include="img\Гарантия.png" />
+    <Content Include="img\Комплектующие.png" />
+    <Content Include="img\Оплата.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
