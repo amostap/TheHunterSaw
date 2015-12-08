@@ -100,6 +100,16 @@ body {
     margin-left: 5px;
 }
 
+.btn-warning {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 .btn-info {
     color: #fff;
     background-color: #30373F;
@@ -178,28 +188,6 @@ body {
     background-size: cover;
 }
 
-.carousel-caption {
-    /* right: 20%; */
-    /* left: -20%; */
-    /* padding-bottom: 30px; */
-    color: white;
-    z-index: 1;
-    top: 39%;
-    height: 220px;
-    width: 475px;
-    /* border: solid; */
-    padding: 20px 20px 20px 20px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    background: -moz-linear-gradient(top, rgba(7,8,11,0.75) 0%, rgba(21,22,32,0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 ); /* IE6-9 */
-}
-
 /* Всплывающее окно */
 .modal-header, h4, .close {
     background-color: white;
@@ -229,14 +217,42 @@ body {
 }
 
 #transparentContainer {
-	color: white;
-	height: 100px;
-	width: 100%;
-	padding: 15px 15px 15px 15px;
-	/* top: 787px; */
-	border: solid 1px;
-	position: absolute;
-	bottom: 0;
+    color: white;
+    height: 100px;
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    /* top: 787px; */
+    border: solid 1px;
+    position: absolute;
+    bottom: 0;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Текст поверх слайдера*/
+
+.carousel-caption {
+    /* right: 20%; */
+    /* left: -20%; */
+    /* padding-bottom: 30px; */
+    color: white;
+    z-index: 1;
+    top: 39%;
+    height: 220px;
+    width: 475px;
+    /* border: solid; */
+    padding: 20px 20px 20px 20px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    background: -moz-linear-gradient(top, rgba(7,8,11,0.75) 0%, rgba(21,22,32,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 ); /* IE6-9 */
 }
 
 .carouselHeader {
@@ -261,18 +277,36 @@ body {
     margin: 5px 0 5px 0;
 }
 
-.Новогодняя_распродажа_профессиональных_Латвийск {
-    font-size: 37px;
-    font-family: "PTSans";
-    color: rgb(255, 238, 3);
+.carousel-caption p {
+    font-size: 14px;
+    color: white;
     font-weight: bold;
-    text-transform: uppercase;
-    line-height: 0.73;
+    width: 200px;
     text-align: left;
-    position: absolute;
-    left: 123.938px;
-    top: 269.968px;
-    width: 473px;
-    height: 55px;
-    z-index: 15;
+}
+
+.item .carousel-caption .img-responsive {
+    height: 170px;
+    position: relative;
+    bottom: 55px;
+    left: 19px;
+    /* top: 10px; */
+}
+
+.item .carousel-caption .row {
+    position: relative;
+    bottom: 69px;
+    /* height: auto; */
+    /* align-content: center; */
+}
+
+section header {
+    margin-top: 80px;
+    font-size: 37px;
+
+}
+
+section header h2{
+
+    font-size: 37px;
 }
