@@ -30,31 +30,31 @@ body {
 }
 
 #section1 {
-    z-index: 10;  
+    z-index: 10;
 }
 
 #section2 {
-    z-index: 20;   
+    z-index: 20;
 }
 
 #section3 {
     z-index: 30;
-} 
+}
 
 #section4 {
-    z-index: 40;   
+    z-index: 40;
 }
 
 #section5 {
-    z-index: 50;    
+    z-index: 50;
 }
 
 #section6 {
     z-index: 60;
-}   
+}
 
 #section7 {
-    z-index: 70;  
+    z-index: 70;
 }
 
 #section8 {
@@ -90,6 +90,8 @@ body {
     width: 100%;
     z-index: 20;
     border: none;
+    border-bottom: solid 1px gray;
+    max-height: 76px;
 }
 
 #phone_numbers {
@@ -98,8 +100,8 @@ body {
 
 .navbar-default .navbar-nav > li > a {
     font-weight: 700;
-    padding-top: 17px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     color: white;
     -webkit-transition: color 0.3s ease-in-out;
@@ -141,7 +143,7 @@ body {
     background-color: #15C242;
     border-color: #15C242;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -161,7 +163,7 @@ body {
     background-color: #30373F;
     border-color: #30373F;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -187,7 +189,6 @@ body {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-
 }
 
 .h2, h2 {
@@ -216,34 +217,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-/* Всплывающее окно */
-.modal-header, h4, .close {
-    background-color: white;
-    color: #525568 !important;
-}
-
-.modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    width: 400px;
-    height: 300px;
-}
-
-.modal.in .modal-dialog {
-    -webkit-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    width: 400px;
-    height: 300px;
-}
-
-.modal-header, .modal-body {
-    padding: 20px 30px 20px 30px;
-    text-align: left;
-    align-items: center;
 }
 
 #transparentContainer {
@@ -282,6 +255,11 @@ body {
         }
 
 /* Текст поверх слайдера*/
+
+
+
+
+
 
 .carousel-caption {
     /* right: 20%; */
@@ -363,6 +341,11 @@ section header {
 /* БЛОК "СХЕМА РАБОТЫ С НАМИ" */
 
 
+
+
+
+
+
 #how {
     background: url('../img/how-it-works-back.jpg') no-repeat center;
     -webkit-background-size: cover;
@@ -371,7 +354,6 @@ section header {
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
 
     #how div {
@@ -380,6 +362,7 @@ section header {
         margin: 0 auto;
         vertical-align: middle;
         position: relative;
+        padding: 80px 1px 10px 10px;
     }
 
     #how table {
@@ -407,6 +390,10 @@ section header {
     }
 
 /* БЛОК "ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER" */
+
+
+
+
 
 
 #adding {
@@ -437,6 +424,7 @@ section header {
         #adding table tr td {
             border-top: none;
             max-width: 333px;
+            padding: 1px 4px 1px 7px;
         }
 
     #adding h2 {
@@ -448,6 +436,11 @@ section header {
     font-weight: 700;
     font-size: 16px;
 }
+
+
+
+
+
 
 
 #garanty {
@@ -509,6 +502,10 @@ section header {
                     z-index: 10;
                 }
 
+
+
+
+
 #sawPicture {
     right: 247px;
     position: relative;
@@ -521,18 +518,17 @@ section header {
 .h2h {
     color: white;
     font-size: 28px;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 15px 0;
     font-weight: 700;
 }
 
-
 #pp-nav li .active span, .pp-slidesNav .active span {
     background: #333;
-	background: white;
-	width: 12px;
-	height: 12px;
-	top: 0px;
-	left: 0px;
+    background: white;
+    width: 12px;
+    height: 12px;
+    top: 0px;
+    left: 0px;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -ms-transition: all 0.35s ease-in-out;
@@ -541,21 +537,25 @@ section header {
     background-color: yellow;
 }
 
-
 #pp-nav span, .pp-slidesNav span {
     top: 2px;
-	left: 2px;
-	width: 8px;
-	height: 8px;
-	border: 1px solid #000;
-	background: rgba(0, 0, 0, 0);
-	border-radius: 50%;
-	position: absolute;
-	z-index: 1;
-	/* color: red; */
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    /* color: red; */
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -ms-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
+}
+
+.navbar .container .img-responsive {
+    margin: 5px;
+    border: solid 1px gray;
 }

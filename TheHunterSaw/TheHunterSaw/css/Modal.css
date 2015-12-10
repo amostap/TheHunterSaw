@@ -1,0 +1,33 @@
+﻿
+/****************************************************\
+                    Всплывающее окно 
+\****************************************************/
+
+
+
+.modal-header .close {
+    background-color: white;
+    color: #525568 !important;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    width: 400px;
+    height: 300px;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    width: 400px;
+    height: 300px;
+}
+
+.modal-header .modal-body {
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+    align-items: center;
+}
