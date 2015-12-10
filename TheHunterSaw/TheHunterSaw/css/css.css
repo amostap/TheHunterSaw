@@ -428,10 +428,10 @@ section header {
         }
 
             #garanty ul li div {
-                -webkit-transition: transform 0.3s ease-in-out;
-                -moz-transition: transform 0.3s ease-in-out;
-                -ms-transition: transform 0.3s ease-in-out;
-                -o-transition: transform 0.3s ease-in-out;
+                -webkit-transition:  all 0.3s ease-in-out;
+                -moz-transition:  all 0.3s ease-in-out;
+                -ms-transition:  all 0.3s ease-in-out;
+                -o-transition:  all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
             }
 
@@ -439,21 +439,22 @@ section header {
                 #garanty ul li div:hover {
                     position: relative;
                     background-color: #1E252F;
-                    -webkit-transform: translateX(-5px);
-                    -moz-transform: translateX(-5px);
-                    -ms-transform: translateX(-5px);
-                    -o-transform: translateX(-5px);
-                    transform: translateX(-5px);
-                    -webkit-transition: transform 0.3s ease-in-out;
-                    -moz-transition: transform 0.3s ease-in-out;
-                    -ms-transition: transform 0.3s ease-in-out;
-                    -o-transition: transform 0.3s ease-in-out;
+                    -webkit-transform: translateX(-6px);
+                    -moz-transform: translateX(-6px);
+                    -ms-transform: translateX(-6px);
+                    -o-transform: translateX(-6px);
+                    transform: translateX(-6px);
+                    -webkit-transition:  all 0.3s ease-in-out;
+                    -moz-transition:  all 0.3s ease-in-out;
+                    -ms-transition:  all 0.3s ease-in-out;
+                    -o-transition:  all 0.3s ease-in-out;
                     transition: all 0.3s ease-in-out;
+                    border-radius: 5px;
                 }
 
 
                 #garanty ul li div img {
-                    padding: 5px 5px 5px 5px;
+                    padding: 6px 6px 6px 6px;
                     position: relative;
                     z-index: 10;
                 }
