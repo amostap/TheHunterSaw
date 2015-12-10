@@ -73,6 +73,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\css.css" />
+    <Content Include="css\jquery.pagepiling.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\1.png" />
     <Content Include="img\2.png" />
@@ -88,6 +89,7 @@
     <Content Include="img\E-Commerce Solutions.png" />
     <Content Include="img\E-Mail Marketing.png" />
     <Content Include="img\Garantee icon.png" />
+    <Content Include="img\how-it-works-back.jpg" />
     <Content Include="img\Hunter-benefits-back.jpg" />
     <Content Include="img\Icon iphone.svg" />
     <Content Include="img\Icon phone.svg" />
@@ -120,6 +122,8 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery.pagepiling.js" />
+    <Content Include="js\jquery.pagepiling.min.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

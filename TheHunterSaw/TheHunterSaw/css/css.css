@@ -10,6 +10,57 @@ body {
     background-color: #13131B;
 }
 
+.container-fluid {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.section {
+    background-attachment: fixed;
+    -ms-background-size: auto 100%;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #13131B;
+}
+
+#section1 {
+    z-index: 10;  
+}
+
+#section2 {
+    z-index: 20;   
+}
+
+#section3 {
+    z-index: 30;
+} 
+
+#section4 {
+    z-index: 40;   
+}
+
+#section5 {
+    z-index: 50;    
+}
+
+#section6 {
+    z-index: 60;
+}   
+
+#section7 {
+    z-index: 70;  
+}
+
+#section8 {
+    z-index: 80;
+}
+
 #transparent {
     background: #07080b;
     background: rgba(7,8,11,1);
@@ -40,11 +91,6 @@ body {
     z-index: 20;
     border: none;
 }
-
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: none;
-}
-
 
 #phone_numbers {
     font-size: 14px;
@@ -141,6 +187,7 @@ body {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+
 }
 
 .h2, h2 {
@@ -161,15 +208,6 @@ body {
     width: 45px;
     height: 44px;
     z-index: 33;
-}
-
-.container-fluid {
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 1000px;
 }
 
 #about {
@@ -213,7 +251,7 @@ body {
     height: 100px;
     width: 100%;
     padding: 15px 15px 15px 15px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -275,19 +313,19 @@ body {
     right: 0;
 }
 
-.carouselHeader, h1 {
-    color: #FFEE02;
-    font-size: 37px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
+    .carouselHeader h1 {
+        color: #FFEE02;
+        font-size: 37px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
 
-.carouselHeader, h2 {
-    font-weight: bold;
-    font-size: 22px;
-    color: #ffffff;
-    margin: 5px 0 5px 0;
-}
+    .carouselHeader h2 {
+        font-weight: bold;
+        font-size: 22px;
+        color: #ffffff;
+        margin: 5px 0 5px 0;
+    }
 
 .carousel-caption p {
     font-size: 14px;
@@ -326,11 +364,23 @@ section header {
 
 
 #how {
-    max-height: 500px;
-    max-width: 1170px;
-    position: relative;
-    top: 70px;
+    background: url('../img/how-it-works-back.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
 }
+
+    #how div {
+        max-width: 1170px;
+        align-self: auto;
+        margin: 0 auto;
+        vertical-align: middle;
+        position: relative;
+    }
 
     #how table {
         border-top: none;
@@ -346,7 +396,7 @@ section header {
 
         #how table tr td {
             border-top: none;
-            max-width: 120px;
+            max-width: 140px;
         }
 
     #how .img-responsive {
@@ -365,8 +415,8 @@ section header {
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    height: 670px;
-    position: relative;
+    max-width: 100%;
+    height: auto;
 }
 
     #adding table p {
@@ -402,7 +452,7 @@ section header {
 
 #garanty {
     max-width: 1170px;
-    max-height: 600px;
+    height: 100%;
 }
 
     #garanty h2 {
@@ -428,10 +478,10 @@ section header {
         }
 
             #garanty ul li div {
-                -webkit-transition:  all 0.3s ease-in-out;
-                -moz-transition:  all 0.3s ease-in-out;
-                -ms-transition:  all 0.3s ease-in-out;
-                -o-transition:  all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
             }
 
@@ -444,10 +494,10 @@ section header {
                     -ms-transform: translateX(-6px);
                     -o-transform: translateX(-6px);
                     transform: translateX(-6px);
-                    -webkit-transition:  all 0.3s ease-in-out;
-                    -moz-transition:  all 0.3s ease-in-out;
-                    -ms-transition:  all 0.3s ease-in-out;
-                    -o-transition:  all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     transition: all 0.3s ease-in-out;
                     border-radius: 5px;
                 }
@@ -471,7 +521,41 @@ section header {
 .h2h {
     color: white;
     font-size: 28px;
-    margin: 0 0 65px 0;
+    margin: 100px 0 100px 0;
+    font-weight: 700;
+}
 
-    /*http://alvarotrigo.com/pagePiling/#page1*/
+
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background: #333;
+	background: white;
+	width: 12px;
+	height: 12px;
+	top: 0px;
+	left: 0px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    background-color: yellow;
+}
+
+
+#pp-nav span, .pp-slidesNav span {
+    top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	/* color: red; */
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
