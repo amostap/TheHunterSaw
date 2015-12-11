@@ -290,8 +290,55 @@
                 <header>
                     <h2 class="h2h">НАШИ ПИЛЫ</h2>
                 </header>
+                <div class="center-block">
 
-                <div class="row">
+                    <div class="row">
+
+                        <div class="wrapper">
+
+                            <div class="col-md-3">
+
+                                <ul class="tabs">
+                                    <li class="tab">
+                                        HS-270
+                                        <img src="img/miniature for button - 270 copy.png" alt="..." />
+                                    </li>
+                                    <li class="tab">
+                                        HS-360
+                                        <img src="img/miniature for button - 360.png" alt="..." />
+                                    </li>
+                                    <li class="tab">
+                                        HS-420
+                                        <img src="img/miniature for button - 420.png" alt="..." />
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-md-9">
+
+                                <div class="tab_content">
+                                    
+                                    <div class="tab_item">
+                                        <img src="img/Large 270.png"/>
+                                        <button class="btn btn-md btn-warning">КУПИТЬ</button>
+                                    </div>
+                                    <div class="tab_item">
+                                        <img src="img/Large 360.png"/>
+                                        <button class="btn btn-md btn-warning">КУПИТЬ</button>
+                                    </div>
+                                    <div class="tab_item">
+                                        <img src="img/Large 420.png"/>
+                                        <button class="btn btn-md btn-warning">КУПИТЬ</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -317,7 +364,7 @@
                     <div id="test">
 
                         <div class="img-responsive">
-                            <img src="img/Img for about us.png"/>
+                            <img src="img/Img for about us.png" />
                         </div>
 
                     </div>
@@ -652,6 +699,13 @@
 
         </div>
 
+        <script>
+            $(".tab_item").not(":first").hide();
+            $(".wrapper .tab").click(function () {
+                $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+                $(".tab_item").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        </script>
 
 
         <script>
