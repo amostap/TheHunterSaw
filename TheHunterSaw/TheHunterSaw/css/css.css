@@ -1,14 +1,27 @@
-﻿@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
+﻿
 
+
+
+
+/****************************************************\
+*                   Основной лист стилей             *
+\****************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
 
 html {
     overflow-x: hidden;
+    height: 100%;
 }
 
 body {
+    color: white;
     font-family: 'PT Sans', sans-serif;
     background-color: #13131B;
+    height: 100%;
 }
+
+
 
 .container-fluid {
     max-width: 100%;
@@ -27,10 +40,6 @@ body {
     position: absolute;
     width: 100%;
     background-color: #13131B;
-}
-
-#section1 {
-    z-index: 10;
 }
 
 #section2 {
@@ -75,127 +84,6 @@ body {
     z-index: 10;
 }
 
-.navbar-default {
-    background: #07080b;
-    background: rgba(7,8,11,1);
-    background: -moz-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
-    background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
-    background: -o-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
-    background: linear-gradient(to bottom, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
-    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
-    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
-    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
-    width: 100%;
-    z-index: 20;
-    border: none;
-    border-bottom: solid 1px gray;
-    max-height: 76px;
-}
-
-#phone_numbers {
-    font-size: 14px;
-}
-
-.navbar-default .navbar-nav > li > a {
-    font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-}
-
-    .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-        color: #FFEE02;
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:active {
-        color: #FFEE02;
-        background-color: transparent;
-    }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: transparent;
-}
-
-.btn {
-    -webkit-transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;
-    -moz-transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;
-    -ms-transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;
-    transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;
-}
-
-.btn-md.round {
-    -ms-border-radius: 24px;
-    border-radius: 24px;
-}
-
-.btn-success {
-    color: #fff;
-    background-color: #15C242;
-    border-color: #15C242;
-    border-radius: 25px;
-    margin-top: 4px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.btn-warning {
-    color: #fff;
-    background-color: #ff0000;
-    border-color: #ff0000;
-    border-radius: 25px;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.btn-info {
-    color: #fff;
-    background-color: #30373F;
-    border-color: #30373F;
-    border-radius: 25px;
-    margin-top: 4px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 20%;
-    left: 97%;
-    z-index: 15;
-    width: 50%;
-    padding-left: 0;
-    /* margin-left: -30%; */
-    text-align: center;
-    list-style: none;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #FFEE02;
-    background-color: transparent;
-    border-bottom: 1px solid #FFEE02;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.h2, h2 {
-    color: white;
-    margin: 20px 20px 20px 20px;
-}
-
 .navbar-right {
     float: right !important;
     margin-right: 0;
@@ -210,140 +98,6 @@ body {
     height: 44px;
     z-index: 33;
 }
-
-#about {
-    background: url('../img/About-us-back.jpg') no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#transparentContainer {
-    color: white;
-    height: 100px;
-    width: 100%;
-    padding: 15px 15px 15px 15px;
-    position: relative;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background: -moz-linear-gradient(top, rgba(21,22,32,0.45) 0%, rgba(18,19,27,0.75) 40%, rgba(18,19,27,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 ); /* IE6-9 */
-}
-
-    #transparentContainer img {
-        height: 50px;
-    }
-
-
-    #transparentContainer div {
-        max-width: 1170px;
-        margin: 0 auto;
-    }
-
-        #transparentContainer div .col-md-1 {
-            width: auto;
-            font-size: 18px;
-            color: #FFEE02;
-            text-transform: uppercase;
-        }
-
-/* Текст поверх слайдера*/
-
-
-
-
-
-
-.carousel-caption {
-    /* right: 20%; */
-    /* left: -20%; */
-    /* padding-bottom: 30px; */
-    color: white;
-    z-index: 1;
-    top: 39%;
-    height: 220px;
-    width: 475px;
-    /* border: solid; */
-    padding: 20px 20px 20px 20px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    background: -moz-linear-gradient(top, rgba(7,8,11,0.75) 0%, rgba(21,22,32,0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(7,8,11,0.75) 0%,rgba(21,22,32,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf07080b', endColorstr='#80151620',GradientType=0 ); /* IE6-9 */
-}
-
-.carouselHeader {
-    top: -107px;
-    position: inherit;
-    width: 475px;
-    /* left: 10; */
-    right: 0;
-}
-
-    .carouselHeader h1 {
-        color: #FFEE02;
-        font-size: 37px;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-
-    .carouselHeader h2 {
-        font-weight: bold;
-        font-size: 22px;
-        color: #ffffff;
-        margin: 5px 0 5px 0;
-    }
-
-.carousel-caption p {
-    font-size: 14px;
-    color: white;
-    font-weight: bold;
-    width: 200px;
-    text-align: left;
-}
-
-.item .carousel-caption .img-responsive {
-    height: 170px;
-    position: relative;
-    bottom: 55px;
-    left: 19px;
-    /* top: 10px; */
-}
-
-.item .carousel-caption .row {
-    position: relative;
-    bottom: 69px;
-    /* height: auto; */
-    /* align-content: center; */
-}
-
-section header {
-    margin-top: 80px;
-    font-size: 37px;
-}
-
-    section header h2 {
-        font-size: 37px;
-    }
-
-
-/* БЛОК "СХЕМА РАБОТЫ С НАМИ" */
-
-
-
-
-
 
 
 #how {
@@ -389,12 +143,6 @@ section header {
         padding: 0 42px 0 50px;
     }
 
-/* БЛОК "ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER" */
-
-
-
-
-
 
 #adding {
     background: url('../img/Hunter-benefits-back.jpg') no-repeat center;
@@ -408,8 +156,7 @@ section header {
 
     #adding table p {
         color: white;
-        margin: 4px 1px 3px -4px;
-        /* align-content: center; */
+        margin: 5px 3px 3px 2px;
     }
 
     #adding table {
@@ -436,12 +183,6 @@ section header {
     font-weight: 700;
     font-size: 16px;
 }
-
-
-
-
-
-
 
 #garanty {
     max-width: 1170px;
@@ -495,16 +236,11 @@ section header {
                     border-radius: 5px;
                 }
 
-
                 #garanty ul li div img {
                     padding: 6px 6px 6px 6px;
                     position: relative;
                     z-index: 10;
                 }
-
-
-
-
 
 #sawPicture {
     right: 247px;
@@ -555,7 +291,60 @@ section header {
     transition: all 0.35s ease-in-out;
 }
 
-.navbar .container .img-responsive {
-    margin: 5px;
-    border: solid 1px gray;
+#about {
+    background: url('../img/About-us-back.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#test {
+    width: 100%;
+    height: 100%;
+}
+
+    #test .img-responsive img {
+        padding: 90px;
+        height: 100%;
+        /* width: 100%; */
+    }
+
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* faster sliding speed */
+.carousel-inner > .item {
+    -webkit-transition: 0.3s ease-in-out left;
+    -moz-transition: 0.3s ease-in-out left;
+    -o-transition: 0.3s ease-in-out left;
+    transition: 0.3s ease-in-out left;
+}
+
+/* keep full widget on smaller screens */
+@media (max-width: 767px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

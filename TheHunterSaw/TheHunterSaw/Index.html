@@ -3,9 +3,6 @@
 <html lang="en">
 
 
-
-
-
 <head>
 
     <meta charset="utf-8">
@@ -23,6 +20,7 @@
     <link href="css/css.css" rel="stylesheet" />
     <link href="css/jquery.pagepiling.css" rel="stylesheet" /> <!-- пролистывания -->
     <link href="css/Modal.css" rel="stylesheet" />
+    <link href="css/Section1.css" rel="stylesheet" />
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
@@ -43,7 +41,7 @@
 
 
 
-<body class="pp-viewing-page">
+<body class="">
 
     <nav class="navbar  navbar-default  navbar-fixed-top">
         <div class="container">
@@ -73,7 +71,7 @@
                     <li><button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"> ОБРАТНЫЙ ЗВОНОК </button></li>
                 </ul>
 
-                <ul id="myMenu" class="nav navbar-nav navbar-right navmenu">
+                <ul id="menu" class="nav navbar-nav navbar-right">
                     <li><a data-menuanchor="page2" href="#page2">ПИЛЫ</a></li>
                     <li><a data-menuanchor="page3" href="#page3">О НАС</a></li>
                     <li><a data-menuanchor="page4" href="#page4">КАК ЗАКАЗАТЬ</a></li>
@@ -94,7 +92,7 @@
 
     <div id="pagepiling">
 
-        <div class="section" id="section1" data-anchor="page2">
+        <div class="section" id="section1" data-anchor="page1">
 
             <!-- Слайдер -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -315,6 +313,14 @@
                 </header>
 
                 <div class="row">
+
+                    <div id="test">
+
+                        <div class="img-responsive">
+                            <img src="img/Img for about us.png"/>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -652,7 +658,7 @@
 
             $(document).ready(function () {
                 $('#pagepiling').pagepiling({
-                    menu: 'myMenu',
+                    menu: 'menu',
                     direction: 'vertical',
                     verticalCentered: true,
                     sectionsColor: [],
