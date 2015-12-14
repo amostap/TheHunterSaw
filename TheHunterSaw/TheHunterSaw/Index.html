@@ -8,26 +8,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta lang="ru"/>
-
-
+    <link rel="shortcut icon" href="img/FooterLogo.png" type="image/png">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Hunter</title>
 
-    <link href="css/reset.css" rel="stylesheet" />
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet" /> <!-- Основоной -->
     <link href="css/jquery.pagepiling.css" rel="stylesheet" /> <!-- пролистывания -->
-    <link href="css/Modal.css" rel="stylesheet" />
-    <link href="css/Section1.css" rel="stylesheet" />
-    <link href="css/Section2.css" rel="stylesheet" />
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link href="css/modal.css" rel="stylesheet" />
+    <link href="css/section1.css" rel="stylesheet" />
+    <link href="css/section2.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
 
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 </head>
 
@@ -276,9 +275,9 @@
 
             <section id="saw" class="container-fluid text-center">
 
-            <header>
-                <h2 class="h2h">НАШИ ПИЛЫ</h2>
-            </header>
+                <header>
+                    <h2 class="h2h">НАШИ ПИЛЫ</h2>
+                </header>
 
                 <div class="center-block">
 
@@ -787,10 +786,126 @@
                 <h2 class="h2h">КОНТАКТЫ</h2>
 
 
-                <footer class="container navbar-fixed-bottom text-center">
-                    <p>
-                        Design by WizardStudio <a href="http://wizard-studio.net/">wizard-studio.net</a>
-                    </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="googleMap">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="onGoogleMap">
+
+
+                            <table class="table">
+                                <tr rowspan="2">
+                                    <th>Оставте свой номер и мы перезвоним!</th>
+                                </tr>
+                                <tr r>
+                                    <td >
+                                        +38(067)697-22-10
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
+                                    </td>
+                                </tr>
+                                <tr rowspan="2">
+                                    или вы можете связатся с нишими специалистами по одниму из телефонов:
+                                </tr>
+                                <tr>
+                                    <td>
+                                        +38 (066) 567-99-89
+                                    </td>
+                                    <td>
+                                        +38 (073) 567-99-89
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        +38 (096) 567-99-89
+                                    </td>
+                                    <td>
+                                        +38 (057) 567-99-89
+                                    </td>
+                                </tr>
+                                <tr>
+                                    Наш адресс:
+                                </tr>
+                                <tr rowspan="2">
+                                    Главный офис: мАкадемика Барабашова, пер.Амурский, офис 200
+                                </tr>
+                                <tr rowspan="2">
+                                    Сервисный центр: ул.Маршала Жукова, БЦ Suncity, офис 350
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <footer>
+
+                    <div class="container navbar-fixed-bottom">
+
+                        <div class="row footerrow">
+
+                            <div class="col-lg-9">
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li><a data-menuanchor="page2" href="#page2">ПИЛЫ</a></li>
+                                    <li><a data-menuanchor="page3" href="#page3">О НАС</a></li>
+                                    <li><a data-menuanchor="page4" href="#page4">КАК ЗАКАЗАТЬ</a></li>
+                                    <li><a data-menuanchor="page5" href="#page5">ПРЕИМУЩЕСТВА </a></li>
+                                    <li><a data-menuanchor="page6" href="#page6">ГАРАНТИИ </a></li>
+                                    <li><a data-menuanchor="page7" href="#page7">ОТЗЫВЫ </a></li>
+                                    <li><a data-menuanchor="page8" href="#page8">КОНТАКТЫ </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
+                            </div>
+
+                            <div class="col-lg-1">
+                                <img src="img/Up button.png" />
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="row footerrow">
+
+                            <div class="col-lg-3">
+
+                                <div class="img-responsive">
+
+                                    <img src="img/FooterLogo.png" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <strong>HUNTER</strong> ЭКСКЛЮЗИВНОЕ ПРЕДСТАВИТЕЛЬСТВО В УКРАИНЕ<br>1998-2016. ВСЕ ПРАВА ЗАЩИЩЕНЫ
+                            </div>
+
+                            <div class="col-lg-2">
+
+                                <img src="img/LogoWizard.png" />
+
+                            </div>
+
+                            <div class="col-lg-1">
+
+                                <img src="img/LogoWizardTree.png" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </footer>
 
             </section>
@@ -836,6 +951,25 @@
             </div>
 
         </div>
+
+
+        <script>
+
+            function initialize() {
+                var mapProp = {
+                    center: new google.maps.LatLng(50.002485, 36.303179),
+                    disableDefaultUI: true,
+                    zoom: 19,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+
+        </script>
 
         <script>
             $(".tab_item").not(":first").hide();
@@ -883,13 +1017,12 @@
 
         <!-- JAVA SCRIPTS -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <script src="js/jquery-1.11.3.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
         <script src="js/jquery.pagepiling.min.js"></script>
-
-
 
     </div>
 </body>
