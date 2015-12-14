@@ -21,8 +21,6 @@ body {
     height: 100%;
 }
 
-
-
 .container-fluid {
     max-width: 100%;
     padding-right: 15px;
@@ -42,42 +40,17 @@ body {
     background-color: #13131B;
 }
 
-#section2 {
-    z-index: 20;
-}
-
-#section3 {
-    z-index: 30;
-}
-
-#section4 {
-    z-index: 40;
-}
-
-#section5 {
-    z-index: 50;
-}
-
-#section6 {
-    z-index: 60;
-}
-
-#section7 {
-    z-index: 70;
-}
-
-#section8 {
-    z-index: 80;
-}
-
 #transparent {
-    background: #07080b;
+    background: rgb(7, 8, 11);
     background: rgba(7,8,11,1);
     background: -moz-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(7,8,11,1)), color-stop(100%, rgba(21,22,32,0.75)));
     background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
     background: -o-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
     background: linear-gradient(to bottom, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
     height: 90px;
     width: 100%;
@@ -87,16 +60,6 @@ body {
 .navbar-right {
     float: right !important;
     margin-right: 0;
-}
-
-.New_logo {
-    background-image: url("New_logo.png");
-    position: absolute;
-    left: 378px;
-    top: 734px;
-    width: 45px;
-    height: 44px;
-    z-index: 33;
 }
 
 
@@ -144,6 +107,7 @@ body {
     }
 
 
+
 #adding {
     background: url('../img/Hunter-benefits-back.jpg') no-repeat center;
     -webkit-background-size: 100% 100%;
@@ -184,13 +148,12 @@ body {
     font-size: 16px;
 }
 
+
+
 #garanty {
     max-width: 1170px;
     height: 100%;
 }
-
-    #garanty h2 {
-    }
 
     #garanty ul {
         width: 600px;
@@ -199,7 +162,7 @@ body {
         font-size: 18px;
         /* font-weight: 700; */
         position: relative;
-        left: 554px;
+        left: 600px;
         top: -391px;
         z-index: 11;
         list-style-type: none;
@@ -241,6 +204,7 @@ body {
                     position: relative;
                     z-index: 10;
                 }
+
 
 #sawPicture {
     right: 247px;
@@ -313,10 +277,6 @@ body {
 
 
 
-
-html, body {
-    height: 100%;
-}
 
 .carousel, .item, .active {
     height: 100%;

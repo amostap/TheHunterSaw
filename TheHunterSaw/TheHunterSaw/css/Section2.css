@@ -5,47 +5,56 @@
     max-width: 1170px;
 }
 
-.wrapper .tabs ul li .active {
-    color: yellow;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d308a+0,12131b+100 */
+.wrapper .col-md-3 .tabs .tab .active {
+
     background: rgb(45,48,138); /* Old browsers */
     background: -moz-linear-gradient(left, rgba(45,48,138,1) 0, rgba(18,19,27,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(45,48,138,1) 0,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(45,48,138,1) 0,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
+
 }
 
-.wrapper .tabs ul li :hover .active {
-    color: yellow;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d308a+0,12131b+100 */
+.wrapper .col-md-3 .tabs .tab :hover .active {
+
     background: rgb(45,48,138); /* Old browsers */
     background: -moz-linear-gradient(left, rgba(45,48,138,1) 0, rgba(18,19,27,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(45,48,138,1) 0,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(45,48,138,1) 0,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
+
 }
 
-.wrapper .tabs ul li:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262b3b+0,12131b+100 */
+.wrapper .col-md-3 .tabs .tab :hover {
+
     background: rgb(38,43,59); /* Old browsers */
     background: -moz-linear-gradient(left, rgba(38,43,59,1) 0%, rgba(18,19,27,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(38,43,59,1) 0%,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(38,43,59,1) 0%,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b3b', endColorstr='#12131b',GradientType=1 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b3b', endColorstr='#12131b',GradientType=1 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b3b', endColorstr='#12131b',GradientType=1 );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b3b', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
 }
 
-.wrapper .tabs ul li {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#191d29+0,12131b+100 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#191d29+0,12131b+100 */
+.wrapper .col-md-3 .tabs .tab {
+
     background: rgb(25,29,41); /* Old browsers */
     background: -moz-linear-gradient(left, rgba(25,29,41,1) 0%, rgba(18,19,27,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(25,29,41,1) 0%,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(25,29,41,1) 0%,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d29', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
+
 }
 
+.wrapper .col-md-3 .tabs .tab{
 
-.wrapper .tabs {
     list-style-type: none;
     text-align: left;
     width: 255px;
@@ -53,6 +62,8 @@
     margin: 0 0 8px 0;
     padding: 10px;
 }
+
+
 
 .wrapper .tab_content {
     font-size: 14px;
