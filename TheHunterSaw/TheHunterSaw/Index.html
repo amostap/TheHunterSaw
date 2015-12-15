@@ -8,35 +8,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/FooterLogo.png" type="image/png">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Hunter</title>
 
-
-
     <link href="css/reset.css" rel="stylesheet" />
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/css.css" rel="stylesheet" /> <!-- Основоной -->
-    <link href="css/jquery.pagepiling.css" rel="stylesheet" /> <!-- пролистывания -->
-    <link href="css/modal.css" rel="stylesheet" />
-    <link href="css/section1.css" rel="stylesheet" />
-    <link href="css/section2.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link href="css/header.css" rel="stylesheet" />
+
+    <link href="css/header.css" rel="stylesheet" />
+
     <link href="css/footer.css" rel="stylesheet" />
+
+    <link href="css/modal.css" rel="stylesheet" />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <link href="css/feedback.css" rel="stylesheet" />
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 </head>
 
-<body>
 
 
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
 
+    <div class="container">
 
-    <!--<nav class="navbar  navbar-default  navbar-fixed-top">
-        <div class="container">
+        <nav class="navbar  navbar-default  navbar-fixed-top">
 
             <div class="navbar-header">
 
@@ -46,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a href="#page1">
+                <a href="#">
                     <img class="img-responsive" src="img/Logo.png"
                          alt="LOGO">
                 </a>
@@ -63,144 +69,98 @@
                     <li><button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"> ОБРАТНЫЙ ЗВОНОК </button></li>
                 </ul>
 
-                <ul id="menu" class="nav navbar-nav navbar-right">
-                    <li><a data-menuanchor="page2" href="#page2">ПИЛЫ</a></li>
-                    <li><a data-menuanchor="page3" href="#page3">О НАС</a></li>
-                    <li><a data-menuanchor="page4" href="#page4">КАК ЗАКАЗАТЬ</a></li>
-                    <li><a data-menuanchor="page5" href="#page5">ПРЕИМУЩЕСТВА </a></li>
-                    <li><a data-menuanchor="page6" href="#page6">ГАРАНТИИ </a></li>
-                    <li><a data-menuanchor="page7" href="#page7">ОТЗЫВЫ </a></li>
-                    <li><a data-menuanchor="page8" href="#page8">КОНТАКТЫ </a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#saw">ПИЛЫ</a></li>
+                    <li><a href="#about">О НАС</a></li>
+                    <li><a href="#how">КАК ЗАКАЗАТЬ</a></li>
+                    <li><a href="#adding">ПРЕИМУЩЕСТВА </a></li>
+                    <li><a href="#garanty">ГАРАНТИИ </a></li>
+                    <li><a href="#feedback">ОТЗЫВЫ </a></li>
+                    <li><a href="#contacts">КОНТАКТЫ </a></li>
                 </ul>
 
             </div>
 
-        </div>
-    </nav>-->
+        </nav>
+    </div>
 
-    <div id="pagepiling">
 
-        <div class="section" id="section1" data-anchor="page1">
+    <div class="container-fluid text-center" id="section1">
 
-            <!-- Слайдер -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Слайдер -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
 
-                    <div class="item active">
+                <div class="item active">
 
-                        <img src="img/Slide-1.jpg" />
+                    <img src="img/Slide-1.jpg" />
 
-                        <div class="carousel-caption">
+                    <div class="carousel-caption">
 
-                            <div class="carouselHeader">
-                                <h1>НОВОГОДНЯЯ РАСПРОДАЖА</h1>
-                                <h2>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h2>
+                        <div class="carouselHeader">
+                            <h1>НОВОГОДНЯЯ РАСПРОДАЖА</h1>
+                            <h2>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h2>
+                        </div>
+
+                        <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
+
+                        <img class="img-responsive" src="img/Large 270.png" />
+
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                Hunter hs-270
                             </div>
 
-                            <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
-
-                            <img class="img-responsive" src="img/Large 270.png" />
-
-                            <div class="row">
-
-                                <div class="col-sm-4">
-                                    Hunter hs-270
-                                </div>
-
-                                <div class="col-sm-4">
-                                    по акционной цене:
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <button class="btn btn-md btn-warning"> 2299 грн</button>
-                                </div>
+                            <div class="col-sm-4">
+                                по акционной цене:
                             </div>
 
+                            <div class="col-sm-4">
+                                <button class="btn btn-md btn-warning"> 2299 грн</button>
+                            </div>
                         </div>
 
                     </div>
 
-                    <div class="item">
+                </div>
 
-                        <img src="img/Slide-2.jpg" />
+                <div class="item">
 
-                        <div class="carousel-caption">
+                    <img src="img/Slide-2.jpg" />
 
-                            <div class="carouselHeader">
-                                <h1>НОВОГОДНЯЯ РАСПРОДАЖА</h1>
-                                <h2>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h2>
-                            </div>
+                    <div class="carousel-caption">
 
-                            <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
-
-                            <img class="img-responsive" src="img/Large 360.png" />
-
-                            <div class="row">
-
-                                <div class="col-sm-4">
-                                    Hunter hs-360
-                                </div>
-
-                                <div class="col-sm-4">
-                                    по акционной цене:
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <button class="btn btn-md btn-warning"> 2299 грн</button>
-                                </div>
-
-                            </div>
-
+                        <div class="carouselHeader">
+                            <h1>НОВОГОДНЯЯ РАСПРОДАЖА</h1>
+                            <h2>ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ</h2>
                         </div>
 
-                    </div>
+                        <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
 
-                    <div class="item">
+                        <img class="img-responsive" src="img/Large 360.png" />
 
-                        <img src="img/Slide-3.jpg" />
+                        <div class="row">
 
-                        <div class="carousel-caption">
-
-                            <div class="carouselHeader">
-                                <h1>
-                                    НОВОГОДНЯЯ РАСПРОДАЖА
-                                </h1>
-                                <h2>
-                                    ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ
-                                </h2>
+                            <div class="col-sm-4">
+                                Hunter hs-360
                             </div>
 
-                            <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
+                            <div class="col-sm-4">
+                                по акционной цене:
+                            </div>
 
-                            <img class="img-responsive" src="img/Large 420.png" />
-
-                            <div class="row">
-
-                                <div class="col-sm-4">
-                                    <p>
-                                        Hunter hs-420
-                                    <p>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <p>
-                                        по акционной цене:
-                                    <p>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <button class="btn btn-md btn-warning"> 2299 грн</button>
-                                </div>
-
+                            <div class="col-sm-4">
+                                <button class="btn btn-md btn-warning"> 2299 грн</button>
                             </div>
 
                         </div>
@@ -209,222 +169,120 @@
 
                 </div>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
+                <div class="item">
 
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <img src="img/Slide-3.jpg" />
 
-                <!--<div>
-                    <div class="container" id="transparentContainer">
+                    <div class="carousel-caption">
+
+                        <div class="carouselHeader">
+                            <h1>
+                                НОВОГОДНЯЯ РАСПРОДАЖА
+                            </h1>
+                            <h2>
+                                ПРОФЕСИОНАЛЬНЫХ ЛАТВИЙСКИХ БЕНЗОПИЛ
+                            </h2>
+                        </div>
+
+                        <p>Только у нас до 20 января Вы сможете приобрести бензопилу</p>
+
+                        <img class="img-responsive" src="img/Large 420.png" />
+
                         <div class="row">
-                            <div class="col-md-1">
-                                <img src="img/Гарантия.png"/>
-                            </div>
-                            <div class="col-md-1">
-                                МЕСЯЦЕВ <br>ГАРАНТИИ
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img/Divider.svg"/>
-                            </div>
-                            <div class="col-lg-1 .New_logo">
 
-                                <img src="img/Бесплатная доставка.png"/>
+                            <div class="col-sm-4">
+                                <p>
+                                    Hunter hs-420
+                                <p>
                             </div>
-                            <div class="col-md-1">
-                                БЕСПЛАТНАЯ <br>ДОСТАВКА
+
+                            <div class="col-sm-4">
+                                <p>
+                                    по акционной цене:
+                                <p>
                             </div>
-                            <div class="col-md-1">
-                                <img src="img/Divider.svg"/>
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img/Оплата.png"/>
-                            </div>
-                            <div class="col-md-1">
-                                ОПЛАТА ПРИ<br>ПОЛУЧЕНИИ
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img/Divider.svg"/>
-                            </div>
-                            <div class="col-md-1">
-                                <img src="img/Комплектующие.png"/>
-                            </div>
-                            <div class="col-md-1">
-                                КОМПЛЕКТАЦИЯ:<br>STIHL,OREGON
+
+                            <div class="col-sm-4">
+                                <button class="btn btn-md btn-warning"> 2299 грн</button>
                             </div>
 
                         </div>
+
                     </div>
-                </div>-->
+
+                </div>
 
             </div>
 
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
         </div>
 
+    </div>
 
 
+    <!------------------------------------------------------->
+    <!----------------------- Наши пилы --------------------->
+    <!------------------------------------------------------->
+    <div id="saw" class="container-fluid text-center">
 
+        <header>
+            <h2 class="h2h">НАШИ ПИЛЫ</h2>
+        </header>
+        <div class="container">
+            <div class="row">
 
-        <!-- Наши пилы -->
-        <div class="section" id="section2" data-anchor="page2">
+                <div class="wrapper">
 
-            <section id="saw" class="container-fluid text-center">
+                    <div class="col-md-3">
 
-                <header>
-                    <h2 class="h2h">НАШИ ПИЛЫ</h2>
-                </header>
+                        <ul class="tabs">
 
-                <div class="center-block">
+                            <li class="tab">
 
-                    <div class="row">
+                                <img src="img/svgs/HS – 270.svg" />
+                                <img src="img/miniature for button - 270 copy.png" alt="..." />
+                            </li>
 
-                        <div class="wrapper">
+                            <li class="tab">
 
-                            <div class="col-md-3">
+                                <img src="img/svgs/HS – 360.svg" />
+                                <img src="img/miniature for button - 360.png" alt="..." />
+                            </li>
 
-                                <ul class="tabs">
+                            <li class="tab">
 
-                                    <li class="tab">
+                                <img src="img/svgs/HS – 420.svg" />
+                                <img src="img/miniature for button - 420.png" alt="..." />
+                            </li>
 
-                                        <img src="img/svgs/HS – 270.svg" />
-                                        <img src="img/miniature for button - 270 copy.png" alt="..." />
-                                    </li>
+                        </ul>
 
-                                    <li class="tab">
+                    </div>
 
-                                        <img src="img/svgs/HS – 360.svg" />
-                                        <img src="img/miniature for button - 360.png" alt="..." />
-                                    </li>
+                    <div class="col-md-9">
 
-                                    <li class="tab">
+                        <div class="tab_content">
 
-                                        <img src="img/svgs/HS – 420.svg" />
-                                        <img src="img/miniature for button - 420.png" alt="..." />
-                                    </li>
+                            <div class="tab_item">
 
-                                </ul>
+                                <table class="table">
 
-                            </div>
-
-                            <div class="col-md-9">
-
-                                <div class="tab_content">
-
-                                    <div class="tab_item">
-
-                                        <table class="table">
-
-                                            <tr>
-                                                <td rowspan="3">
-                                                    <ul>
-                                                        <li>
-                                                            <img class="saw_svg" src="img/svgs/HS – 270.svg" />
-
-                                                        </li>
-
-                                                        <li>
-                                                            Производитель: Hunter
-                                                        </li>
-                                                        <li>
-                                                            Страна-производитель: Латвия
-
-                                                        </li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-                                                        <li>
-                                                            Мощность, кВ/л.с 2,7/3,65
-                                                        </li>
-                                                        <li>
-                                                            Объем двигателя, см3 45
-                                                        </li>
-                                                        <li>
-                                                            Емкость топливного бака, мл 550
-                                                        </li>
-                                                        <li>
-                                                            Максимальные обороты, об/мин 9500
-                                                        <li>
-                                                            Длина шины, см/дюйм 40/16
-                                                        </li>
-                                                        <li>
-                                                            Вес, кг 5,1
-                                                        </li>
-
-                                                    </ul>
-                                                </td>
-
-                                                <td colspan="2">
-
-                                                    <img src="img/Large 270.png" />
-
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td colspan="2">
-                                                    тут когда то будет галерея
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <ol>
-                                                        <li>
-                                                            Дополнительно:
-                                                        </li>
-                                                        <li>
-                                                            Цепь Stihl – для твердых пород дерева
-                                                        </li>
-                                                        <li>
-                                                            Шина Oreon
-                                                        </li>
-                                                        <li>
-                                                            Праймер – подкачка бензина
-                                                        </li>
-                                                        <li>
-                                                            Плавный пуск
-                                                        </li>
-                                                    </ol>
-                                                </td>
-                                                <td>
-                                                    <ul>
-                                                        <li>
-                                                            цена 228 грн
-                                                        </li>
-                                                        <li>
-                                                            <button class="btn btn-md btn-warning">
-                                                                КУПИТЬ
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-
-                                        </table>
-
-                                    </div>
-
-
-
-                                    <div class="tab_item">
-                                        <img class="saw_svg" src="img/svgs/HS – 360.svg" />
-                                        <img class="saw_png" src="img/Large 360.png" />
-                                        <button class="btn btn-md btn-warning">КУПИТЬ</button>
-                                    </div>
-                                    <div class="tab_item">
-
-                                        <div>
+                                    <tr>
+                                        <td rowspan="3">
                                             <ul>
                                                 <li>
-                                                    <img class="saw_svg" src="img/svgs/HS – 420.svg" />
+                                                    <img class="saw_svg" src="img/svgs/HS – 270.svg" />
+
                                                 </li>
 
                                                 <li>
@@ -456,20 +314,59 @@
                                                 </li>
 
                                             </ul>
+                                        </td>
 
-                                            <div class="img-responsive">
-                                                <img class="saw_png" src="img/Large 420.png" />
-                                            </div>
+                                        <td colspan="2">
 
-                                            <div>
-                                                Цена: 228 grn
-                                                <button class="btn btn-md btn-warning">КУПИТЬ</button>
-                                            </div>
-                                        </div>
+                                            <img src="img/Large 270.png" />
 
-                                    </div>
+                                        </td>
 
-                                </div>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td colspan="2">
+                                            тут когда то будет галерея
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <ol>
+                                                <li>
+                                                    Дополнительно:
+                                                </li>
+                                                <li>
+                                                    Цепь Stihl – для твердых пород дерева
+                                                </li>
+                                                <li>
+                                                    Шина Oreon
+                                                </li>
+                                                <li>
+                                                    Праймер – подкачка бензина
+                                                </li>
+                                                <li>
+                                                    Плавный пуск
+                                                </li>
+                                            </ol>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    цена 228 грн
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-md btn-warning">
+                                                        КУПИТЬ
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
 
                             </div>
 
@@ -479,487 +376,420 @@
 
                 </div>
 
-            </section>
+            </div>
+        </div>
+    </div>
 
+
+
+    <!------------------------------------------------------->
+    <!-------------------Почему нам доверяют----------------->
+    <!------------------------------------------------------->
+    <div class="container-fluid text-center" id="about">
+
+        <header>
+            <h2 class="h2h">ПОЧЕМУ НАМ ДОВЕРЯЮТ</h2>
+        </header>
+
+
+        <div class="container">
+            <img class="img-responsive" src="img/Benefits (merged).png" alt="" />
         </div>
 
 
 
-
-
-        <!-- Почему нам доверяют -->
-        <div class="section" id="section3" data-anchor="page3">
-
-            <section id="about" class="container-fluid text-center">
-
-                <header>
-                    <h2 class="h2h">ПОЧЕМУ НАМ ДОВЕРЯЮТ</h2>
-                </header>
-
-                <div class="row">
-
-                    <div id="test">
-
-                        <div class="img-responsive">
-                            <img src="img/Benefits (merged).png" />
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
-
-
-
-
-
-        <!-- Схема работы с нами -->
-        <div class="section" id="section4" data-anchor="page4">
-
-            <section id="how" class="container-fluid text-center">
-
-                <header>
-                    <h2 class="h2h">СХЕМА РАБОТЫ С НАМИ</h2>
-                </header>
-
-                <div>
-
-                    <table class="table">
-                        <tr>
-                            <td>
-                                <img src="img/E-Mail Marketing.png" />
-                            </td>
-                            <td>
-                                <img src="img/Strategy & Consultancy.png" />
-                            </td>
-                            <td>
-                                <img src="img/Target Keywords.png" />
-                            </td>
-                            <td>
-                                <img src="img/Affliliate Marketing.png" />
-                            </td>
-                            <td>
-                                <img src="img/E-Commerce Solutions.png" />
-                            </td>
-                            <td>
-                                <img src="img/Places Optimizations.png" />
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">
-                                    ОСТАВТЕ ЗАЯВКУ
-                                </button>
-                            </td>
-                            <td>
-                                <p>
-                                    Наш специалист<br>свяжется с Вами
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    Помогаем подобрать<br>оптимальную бензопилу<br>с учетом всех Ваших<br>требований
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    Укажите наиболее<br>удобный для вас способ<br>оплаты: оплата при получении<br>или безналичный расчет
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    Выберите наиболее<br>удобный для вас способ<br>доставки
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    Доставим бензопилу в<br>течении 1-3 дней
-                                </p>
-                            </td>
-                        </tr>
-
-                    </table>
-
-                    <img class="img-responsive" src="img/Line for stadies.png" alt="..." />
-
-                </div>
-
-            </section>
-
-        </div>
-
-
-
-
-
-        <!-- Преймущества -->
-        <div class="section" id="section5" data-anchor="page5">
-
-            <section id="adding" class="container-fluid text-left">
-                <h2 class="h2h">ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER</h2>
-
-                <div class="table-responsive">
-
-                    <table class="table">
-
-                        <tr>
-                            <td>
-                                <img src="img/1.png" />
-                            </td>
-                            <td>
-                                <p class="p2">Air Injection – инновационная система очистки воздуха.</p>
-                                <p>
-                                    Центробежная система очистки воздуха: снижает износ,
-                                    увеличивает промежутки между чистками фильтра.
-                                </p>
-                            </td>
-                            <td>
-                                <img src="img/2.png" />
-                            </td>
-                            <td>
-                                <p class="p2">Картер из сплава алюминия и магния.</p>
-                                <p>
-                                    Картер повышенной прочности: создан с учетом профессионального использования
-                                    бензопилы на повышенных нагрузках, выдерживает работу на высоких оборотах,
-                                    обеспечивает длительный срок службы.
-                                </p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="img/3.png" />
-                            </td>
-                            <td>
-                                <p class="p2">Коленчатый вал из трех частей.</p>
-                                <p>Кованый коленчатый вал характеризуется повышенной прочностью и долговечностью.</p>
-                            </td>
-                            <td>
-                                <img src="img/4.png" />
-                            </td>
-                            <td>
-                                <p class="p2">
-                                    AVT - антивибрационная система.
-                                </p>
-                                <p>
-                                    Эффективные антивибрационные элементы поглощают вибрацию, тем
-                                    самым защищая руки пользователя от отрицательного воздействия.
-                                </p>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="img/5.png" />
-                            </td>
-                            <td>
-                                <p class="p2">
-                                    Регулируемый масляный насос.
-                                </p>
-                                <p>
-                                    Обеспечивает эффективную регулировку количества подаваемой смазки цепи в соответствии с потребностями.
-                                </p>
-                            </td>
-                            <td>
-                                <img src="img/6.png" />
-                            </td>
-                            <td>
-                                <p class="p2">
-                                    Натяжитель цепи, установленный сбоку на корпусе.
-                                </p>
-                                <p>
-                                    Боковое натяжение цепи обеспечивает легкость и быстроту ее регулирования.
-                                </p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="img/7.png" />
-                            </td>
-                            <td>
-                                <p class="p2">
-                                    Эргономичный захват.
-                                </p>
-                                <p>
-                                    Передняя рукоятка, расположенная под углом улучшает захват и обеспечивает естественное рабочее положение кистей рук.
-                                </p>
-                            </td>
-                            <td>
-                                <img src="img/8.png" />
-                            </td>
-                            <td>
-                                <p class="p2">
-                                    Быстросъемное крепление воздушного фильтра.
-                                </p>
-                                <p>
-                                    Данное крепление облегчает замену и чистку воздушного фильтра.
-                                </p>
-                            </td>
-                        </tr>
-
-                    </table>
-
-                </div>
-
-            </section>
-
-        </div>
-
-
-
-
-        <!-- Гарантии -->
-        <div class="section" id="section6" data-anchor="page6">
-
-            <section id="garanty" class="container-fluid text-center">
-
-                <header>
-                    <h2 class="h2h">ГАРАНТИИ</h2>
-                </header>
-
-                <div class="img-responsive">
-                    <img id="sawPicture" src="img/image-saw-for-garantees.jpg" />
-                </div>
-
-                <ul>
-                    <li>
-                        <div>
-                            <img src="img/Garantee icon.png" /> <strong>36 месяцев</strong> бесплатной гарантии
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="img/Garantee icon.png" /> Запасные части <strong>всегда в наличии</strong>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="img/Garantee icon.png" /> Расходные материалы <strong>всегда в наличии</strong>.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="img/Garantee icon.png" /> Гарантийное и послегарантийное обслуживание.
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="img/Garantee icon.png" /> Высокое качество и профессионализм гарантийного сервиса.
-                        </div>
-                    </li>
-                </ul>
-
-            </section>
-
-        </div>
-
-
-
-
-
-        <!-- Отзывы -->
-        <div class="section" id="section7" data-anchor="page7">
-
-            <section id="feedback" class="container-fluid text-center">
-
-                <header>
-                    <h2 class="h2h">ОТЗЫВЫ</h2>
-                </header>
-
-            </section>
-        </div>
-
-
-
-
-
-        <div class="section" id="section8" data-anchor="page8">
-
-            <section id="contacts" class="container-fluid text-center">
-
-
-                <div class="row section8center">
-                    <div class="col-lg-6">
-                        <div id="googleMap">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div id="onGoogleMap">
-
-                            <table class="table">
-
-                                <tr>
-                                    <th colspan="2">
-                                        Оставте свой номер и мы перезвоним!
-                                    </th>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        +38(067)697-22-10
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    
-                                    <td colspan="2">
-                                    или вы можете связатся с нишими специалистами по одниму из телефонов:
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        +38 (066) 567-99-89
-                                    </td>
-                                    <td>
-                                        +38 (073) 567-99-89
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        +38 (096) 567-99-89
-                                    </td>
-                                    <td>
-                                        +38 (057) 567-99-89
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        Наш адрес: ла бла бла бла блабала бла бла бла блаба
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        Наш адрес:ла бла бла бла блабала бла бла бла блабала 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        Наш адрес:ла бла бла бла блабала бла бла бла блабала 
-                                    </td>
-                                </tr>
-
-                            </table>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <footer>
-
-                    <div class="container navbar-fixed-bottom">
-
-                        <div class="row footerrow">
-
-                            <div class="col-lg-9">
-                                <ul class="nav navbar-nav navbar-left">
-                                    <li><a data-menuanchor="page2" href="#page2">ПИЛЫ</a></li>
-                                    <li><a data-menuanchor="page3" href="#page3">О НАС</a></li>
-                                    <li><a data-menuanchor="page4" href="#page4">КАК ЗАКАЗАТЬ</a></li>
-                                    <li><a data-menuanchor="page5" href="#page5">ПРЕИМУЩЕСТВА </a></li>
-                                    <li><a data-menuanchor="page6" href="#page6">ГАРАНТИИ </a></li>
-                                    <li><a data-menuanchor="page7" href="#page7">ОТЗЫВЫ </a></li>
-                                    <li><a data-menuanchor="page8" href="#page8">КОНТАКТЫ </a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-2">
-                                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
-                            </div>
-
-                            <div class="col-lg-1">
-                                <img src="img/Up button.png" />
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="row footerrow">
-
-                            <div class="col-lg-3">
-
-                                <div class="img-responsive">
-
-                                    <img src="img/FooterLogo.png" />
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-6">
-                                <strong>HUNTER</strong> ЭКСКЛЮЗИВНОЕ ПРЕДСТАВИТЕЛЬСТВО В УКРАИНЕ<br>1998-2016. ВСЕ ПРАВА ЗАЩИЩЕНЫ
-                            </div>
-
-                            <div class="col-lg-2">
-
-                                <img src="img/LogoWizard.png" />
-
-                            </div>
-
-                            <div class="col-lg-1">
-
-                                <img src="img/LogoWizardTree.png" />
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </footer>
-
-            </section>
-
-        </div>
-
-
-
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-
-                    <div class="modal-body">
-
-                        <form role="form">
-
-                            <div class="form-group">
-                                <label for="psw">Ваше имя</label>
-                                <input type="text" class="form-control" id="psw" placeholder="Ваше имя">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="usrname">Номер телефона</label>
-                                <input type="text" class="form-control" id="usrname" placeholder="Номер телефона">
-                            </div>
-
-                            <button type="submit" class="btn btn-success">
-                                ОТПРАВИТЬ ЗАПРОС
+    </div>
+
+
+
+
+
+
+    <!-- Схема работы с нами -->
+
+    <div class=" container-fluid text-center" id="how">
+
+        <header>
+            <h2 class="h2h">СХЕМА РАБОТЫ С НАМИ</h2>
+        </header>
+        <div class="container">
+            <div class="table-responsive">
+
+                <table class="table">
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/E-Mail Marketing.png" alt="" />
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/Strategy & Consultancy.png" alt="" />
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/Target Keywords.png" alt="" />
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/Affliliate Marketing.png" alt="" />
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/E-Commerce Solutions.png" alt="" />
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/Places Optimizations.png" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">
+                                ОСТАВТЕ ЗАЯВКУ
                             </button>
+                        </td>
+                        <td>
+                            <p>
+                                Наш специалист<br>свяжется с Вами
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Помогаем подобрать<br>оптимальную бензопилу<br>с учетом всех Ваших<br>требований
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Укажите наиболее<br>удобный для вас способ<br>оплаты: оплата при получении<br>или безналичный расчет
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Выберите наиболее<br>удобный для вас способ<br>доставки
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Доставим бензопилу в<br>течении 1-3 дней
+                            </p>
+                        </td>
+                    </tr>
 
-                        </form>
+                </table>
 
+                <img class="img-responsive long" src="img/Line for stadies.png" alt="..." />
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Преймущества -->
+
+    <div class="container-fluid text-center" id="adding">
+
+        <h2 class="h2h">
+            ПРЕЙМУЩЕСТВА БЕНЗОПИЛ HUNTER
+        </h2>
+
+        <div class="container">
+
+            <div class="table-responsive">
+                <table class="table">
+
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/1.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">Air Injection – инновационная система очистки воздуха.</p>
+                            <p>
+                                Центробежная система очистки воздуха: снижает износ,
+                                увеличивает промежутки между чистками фильтра.
+                            </p>
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/2.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">Картер из сплава алюминия и магния.</p>
+                            <p>
+                                Картер повышенной прочности: создан с учетом профессионального использования
+                                бензопилы на повышенных нагрузках, выдерживает работу на высоких оборотах,
+                                обеспечивает длительный срок службы.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/3.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">Коленчатый вал из трех частей.</p>
+                            <p>Кованый коленчатый вал характеризуется повышенной прочностью и долговечностью.</p>
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/4.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">
+                                AVT - антивибрационная система.
+                            </p>
+                            <p>
+                                Эффективные антивибрационные элементы поглощают вибрацию, тем
+                                самым защищая руки пользователя от отрицательного воздействия.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/5.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">
+                                Регулируемый масляный насос.
+                            </p>
+                            <p>
+                                Обеспечивает эффективную регулировку количества подаваемой смазки цепи в соответствии с потребностями.
+                            </p>
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/6.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">
+                                Натяжитель цепи, установленный сбоку на корпусе.
+                            </p>
+                            <p>
+                                Боковое натяжение цепи обеспечивает легкость и быстроту ее регулирования.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/7.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">
+                                Эргономичный захват.
+                            </p>
+                            <p>
+                                Передняя рукоятка, расположенная под углом улучшает захват и обеспечивает естественное рабочее положение кистей рук.
+                            </p>
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="img/8.png" alt="" />
+                        </td>
+                        <td>
+                            <p class="p2">
+                                Быстросъемное крепление воздушного фильтра.
+                            </p>
+                            <p>
+                                Данное крепление облегчает замену и чистку воздушного фильтра.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Гарантии -->
+
+
+    <div class="container-fluid text-center" id="garanty">
+
+        <header>
+            <h2 class="h2h">ГАРАНТИИ</h2>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="garanteeImg img-responsive" id="sawPicture" src="img/image-saw-for-garantees.jpg" alt="" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="garanteeList">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="img/Garantee icon.png" alt="" /> <strong>36 месяцев</strong> бесплатной гарантии
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="img/Garantee icon.png" alt="" /> Запасные части <strong>всегда в наличии</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="img/Garantee icon.png" alt="" /> Расходные материалы <strong>всегда в наличии</strong>.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="img/Garantee icon.png" alt="" /> Гарантийное и послегарантийное обслуживание.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="img/Garantee icon.png" alt="" /> Высокое качество и профессионализм гарантийного сервиса.
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Отзывы -->
+
+
+    <div id="feedback" class="container-fluid text-center">
+
+        <header>
+            <h2 class="h2h">ОТЗЫВЫ</h2>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="containerForm">
+                        <h2>ОСТАВИТЬ ОТЗЫВ</h2>
+                        <form role="form">
+                            Ваша оценка:
+                            <input type="text" class="form-control">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="userFeedback">Отзыв:</label>
+                                <textarea class="form-control" id="userFeedback" rows="3" type="text"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">ОТПРАВИТЬ ОТЗЫВ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="contacts" class="container-fluid text-center">
+
+        <header>
+            <h2 class="h2h">КОНТАКТЫ</h2>
+        </header>
+
+        <div class="row section8center">
+
+            <div class="col-lg-6">
+                <div id="googleMap">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div id="onGoogleMap">
+
+                    <table class="table">
+
+                        <tr>
+                            <th colspan="2">
+                                Оставте свой номер и мы перезвоним!
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                +38(067)697-22-10
+                            </td>
+                            <td>
+                                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td colspan="2">
+                                <span>
+                                    или вы можете связатся с нишими специалистами по одниму из телефонов:
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                +38 (066) 567-99-89
+                            </td>
+                            <td>
+                                +38 (073) 567-99-89
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                +38 (096) 567-99-89
+                            </td>
+                            <td>
+                                +38 (057) 567-99-89
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">
+                                Наш адрес:
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    Главный офис: <strong>м.Академика Барабашова, пер.Амурский, офис 200</strong>
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    Сервисный центр: <strong>ул.Маршала Жукова, Бц Sunsity, офис 350</strong>
+                                </span>
+                            </td>
+                        </tr>
+
+                    </table>
 
                 </div>
 
@@ -968,77 +798,111 @@
         </div>
 
 
-        <script>
 
-            function initialize() {
-                var mapProp = {
-                    center: new google.maps.LatLng(50.002485, 36.303179),
-                    disableDefaultUI: true,
-                    zoom: 19,
-                    scrollwheel: false,
-                    draggable: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+        <footer>
 
+            <div class="container">
 
-        </script>
+                <div class="row footerrow">
 
-        <script>
-            $(".tab_item").not(":first").hide();
-            $(".wrapper .tab").click(function () {
-                $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-                $(".tab_item").hide().eq($(this).index()).fadeIn();
-            }).eq(0).addClass("active");
-        </script>
+                    <div class="col-lg-3">
 
+                        <div class="img-responsive">
 
-        <script>
+                            <img src="img/FooterLogo.png" alt="" />
 
-            $(document).ready(function () {
-                $('#pagepiling').pagepiling({
-                    menu: 'menu',
-                    direction: 'vertical',
-                    verticalCentered: true,
-                    sectionsColor: [],
-                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-                    scrollingSpeed: 700,
-                    easing: 'linear',
-                    loopBottom: true,
-                    loopTop: true,
-                    css3: true,
-                    navigation: {
-                        'textColor': '#ffffff',
-                        'bulletsColor': '#FFEE02',
-                        'position': 'right',
-                        'tooltips': ['Главная', 'Пилы', 'О Нас', 'Как заказать', 'Преймущества', 'Гарантии', 'Отзывы', 'Контакты']
-                    },
-                    normalScrollElements: null,
-                    normalScrollElementTouchThreshold: 5,
-                    touchSensitivity: 5,
-                    keyboardScrolling: true,
-                    sectionSelector: '.section',
-                    animateAnchor: true,
+                        </div>
 
-                    //events
-                    onLeave: function (index, nextIndex, direction) { },
-                    afterLoad: function (anchorLink, index) { },
-                    afterRender: function () { }
-                });
-            });
-        </script>
+                    </div>
 
-        <!-- JAVA SCRIPTS -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-        <script src="js/jquery.pagepiling.min.js"></script>
+                    <div class="col-lg-6">
+                        <strong>HUNTER</strong> ЭКСКЛЮЗИВНОЕ ПРЕДСТАВИТЕЛЬСТВО В УКРАИНЕ<br>1998-2015. ВСЕ ПРАВА ЗАЩИЩЕНЫ
+                    </div>
+
+                    <div class="col-lg-2">
+
+                        <img src="img/LogoWizard.png" />
+
+                    </div>
+
+                    <div class="col-lg-1">
+
+                        <img src="img/LogoWizardTree.png" alt="Wizard Studio" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
 
     </div>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="psw">Ваше имя</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Ваше имя">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usrname">Номер телефона</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Номер телефона">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">
+                            ОТПРАВИТЬ ЗАПРОС
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(50.002485, 36.303179),
+                disableDefaultUI: true,
+                zoom: 19,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+
+    <!-- JAVA SCRIPTS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

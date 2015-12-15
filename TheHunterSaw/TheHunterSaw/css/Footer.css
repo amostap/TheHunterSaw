@@ -2,69 +2,75 @@
               FOOTER
 \******************************/
 
-.navbar-fixed-bottom {
-    bottom: 0;
-    margin-bottom: 5px;
-    border-width: 1px 0 0;
+.text-center {
+    text-align: justify;
 }
 
 footer .row {
-    height: 74px;
-    border-top: solid 1px gray;
+    margin-top: 50px;
+    height: 75px;
+    border-top: solid 2px #202430;
+    margin-bottom: 5px;
 }
 
-    footer .row .col-lg-1 {
-        background-color: #1F232F;
-        border-bottom: 2px solid #ce5252;
-    }
-
-
-.section8center {
-    margin: 95px 0 160px 0;
+footer .col-lg-6,
+footer .col-lg-2,
+footer .col-lg-1 {
+    padding: 14px;
 }
 
-footer .nav > li > a:focus,
-.nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:active {
-    color: #FFEE02;
-    background-color: transparent;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+footer .col-lg-1 {
+
+    padding: 14px 30px 14px;
+    max-width: 70px;
+    background-color: #1F232F;
+    border-bottom: 2px solid #ce5252;
 }
 
-footer .nav > li > a {
-    font-weight: 700;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    text-align: center;
-    color: white;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+footer .col-lg-1 img {
+	position: relative;
+	top: 1px;
+	right: 17px;
 }
 
-footer .row :last-child {
-    
-} 
+footer .col-lg-2 {
+    text-align: right;
+}
+
+footer .col-lg-3 {
+    padding-left: 30px;
+}
+
+footer .col-lg-6 {
+    text-align: left;
+}
 
 #onGoogleMap table tr td {
     width: 200px;
+    padding: 10px;
+    border: none;
+
 }
 
-.col-lg-6 {
+#onGoogleMap table tr th {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#onGoogleMap table tr td span {
+    text-align: left;
+    font-size: 16px;
+}
+
+
+ .col-lg-6 {
     width: 50%;
     padding: 0;
 }
 
-/* all map containers must be full height */
-html, body, .container-fluid, .row, .map {
-    height: 100%;
-}
 
 #googleMap {
     width: 100%;
@@ -75,5 +81,6 @@ html, body, .container-fluid, .row, .map {
     padding: 20px;
     width: 100%;
     height: 425px;
-    background: gray;
+    background: #353C45;
 }
+
