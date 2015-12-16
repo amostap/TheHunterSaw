@@ -13,9 +13,11 @@
 	background: -webkit-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
 	background: -o-linear-gradient(top, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
 	background: linear-gradient(to bottom, rgba(7,8,11,1) 0, rgba(21,22,32,0.75) 100%);
+	-webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+	-moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
+	-o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
 	z-index: 20;
-	border: none;
 	border-bottom: solid 1px gray;
 	height: 76px;
 }
@@ -44,17 +46,18 @@
 		border-bottom: solid 1px yellow;
 	}
 
-
-	.navbar-default .navbar-nav > li > a:active,
 	.navbar-default .navbar-nav > li > a:active {
 		color: #FFEE02;
 		background-color: transparent;
 	}
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-	border-color: transparent;
+.navbar-nav {
+    max-width: 1170px;
 }
+
+
+
+
 
 .btn {
 	-webkit-transition: background-color 0.3s ease-in-out, border-color 1s ease-in-out;

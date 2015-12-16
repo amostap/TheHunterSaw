@@ -24,13 +24,13 @@ footer .col-lg-1 {
     padding: 14px 30px 14px;
     max-width: 70px;
     background-color: #1F232F;
-    border-bottom: 2px solid #ce5252;
+    border-bottom: 0.02857143% solid #ce5252;
 }
 
 footer .col-lg-1 img {
-	position: relative;
-	top: 1px;
-	right: 17px;
+    position: relative;
+    top: 1px;
+    right: 17px;
 }
 
 footer .col-lg-2 {
