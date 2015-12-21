@@ -19,40 +19,40 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07080b', endColorstr='#151620', GradientType=0 );
 	z-index: 20;
 	height: 90px;
-    border: none;
+	border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
-	font-weight: 700;
-	padding-top: 12px;
-	padding-bottom: 10px;
-	text-align: center;
-	color: white;
-	-webkit-transition: color 0.3s ease-in-out;
-	-moz-transition: color 0.3s ease-in-out;
-	-ms-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-right: 7px;
-	margin-left: 7px;
-}
-
-	.navbar-default .navbar-nav > li > a:focus,
-	.navbar-default .navbar-nav > li > a:hover {
-		color: #FFEE02;
-		background-color: transparent;
-		border-bottom: solid 2px yellow;
+	.navbar-default .navbar-nav > li > a {
+		font-weight: 700;
+		padding-top: 12px;
+		padding-bottom: 10px;
+		text-align: center;
+		color: white;
+		-webkit-transition: color 0.3s ease-in-out;
+		-moz-transition: color 0.3s ease-in-out;
+		-ms-transition: color 0.3s ease-in-out;
+		-o-transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-right: 7px;
+		margin-left: 7px;
 	}
 
-	.navbar-default .navbar-nav > li > a:active {
-		color: #FFEE02;
-		background-color: transparent;
-	}
+		.navbar-default .navbar-nav > li > a:focus,
+		.navbar-default .navbar-nav > li > a:hover {
+			color: #FFEE02;
+			background-color: transparent;
+			border-bottom: solid 2px yellow;
+		}
+
+		.navbar-default .navbar-nav > li > a:active {
+			color: #FFEE02;
+			background-color: transparent;
+		}
 
 .navbar-nav {
-    max-width: 1170px;
+	max-width: 1170px;
 }
 
 
@@ -68,7 +68,7 @@
 	font-weight: 700;
 	border-radius: 25px;
 	display: inline-block;
-	padding: 4px 12px 5px 28px;
+	padding: 4px 12px 5px 12px;
 	margin-bottom: 0;
 	font-size: 14px;
 	text-align: center;
@@ -79,11 +79,11 @@
 }
 
 .navbar .btn-md {
-     margin-top: 16px;
-     height: 30px;
-     margin-right: 5px;
-     margin-left: 5px;
- }
+	margin-top: 16px;
+	height: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
 
 .btn-success {
 	color: #fff;
@@ -91,38 +91,35 @@
 	border-color: #15C242;
 }
 
-.btn-success:hover {
-	color: #fff;
-	background-color: #15C242;
-	border-color: #15C242;
-}
+	.btn-success:hover {
+		color: #fff;
+		background-color: #15C242;
+		border-color: #15C242;
+	}
 
 .btn-warning {
 	color: #fff;
 	background-color: #ff0000;
 	border-color: #ff0000;
-
 }
 
-.btn-warning:hover{
-	color: #fff;
-	background-color: #ff0000;
-	border-color: #ff0000;
-
-}
+	.btn-warning:hover {
+		color: #fff;
+		background-color: #ff0000;
+		border-color: #ff0000;
+	}
 
 .btn-info {
 	color: #fff;
 	background-color: #30373F;
 	border-color: #30373F;
-
 }
 
-.btn-info:hover {
-	color: #fff;
-    background-color: #4A535C;
-    border-color: #4A535C;
-}
+	.btn-info:hover {
+		color: #fff;
+		background-color: #4A535C;
+		border-color: #4A535C;
+	}
 
 
 .carousel-indicators {
@@ -148,37 +145,6 @@
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
-
-#transparentContainer {
-	color: white;
-	height: 100px;
-	width: 100%;
-	padding: 15px 15px 15px 15px;
-	position: relative;
-	bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	background: -moz-linear-gradient(top, rgba(21,22,32,0.45) 0%, rgba(18,19,27,0.75) 40%, rgba(18,19,27,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	-webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-	-moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-	-o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 );
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 ); /* IE6-9 */
-}
-
-	#transparentContainer img {
-		height: 50px;
-	}
-
-
-	#transparentContainer div .col-md-1 {
-		width: auto;
-		font-size: 18px;
-		color: #FFEE02;
-		text-transform: uppercase;
-	}
 
 .carousel-caption {
 	color: white;
@@ -246,9 +212,6 @@ section header {
 	font-size: 37px;
 }
 
-	section header h2 {
-		font-size: 37px;
-	}
 
 .navbar .container .img-responsive {
 	margin: 5px;
@@ -256,9 +219,9 @@ section header {
 
 /* media 768*/
 
- .navbar-fixed-bottom .navbar-collapse,
- .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse {
+/*.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse {
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -275,4 +238,53 @@ section header {
 	border-top: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+}*/
+
+
+
+#trans-container {
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#151620+0,12131b+40,12131b+100&0.45+0,0.75+40,1+100 */
+	background: -moz-linear-gradient(top, rgba(21,22,32,0.45) 0%, rgba(18,19,27,0.75) 40%, rgba(18,19,27,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(21,22,32,0.45) 0%,rgba(18,19,27,0.75) 40%,rgba(18,19,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73151620', endColorstr='#12131b',GradientType=0 ); /* IE6-9 */
+	height: 90px;
+	position: relative;
+	bottom: 90px;
+	color: yellow;
+	font-size: 18px;
 }
+
+	#trans-container .row {
+		max-width: 1170px;
+		margin: 0 auto;
+		max-height: 90px;
+	}
+
+	#trans-container .block {
+		/*margin-top: 1.9%;*/
+		margin-top: 19px;
+		float: left;
+		width: 25%;
+		max-height: inherit;
+	}
+
+		#trans-container .block .block-image {
+			float: left;
+			display: inline-block;
+			margin-right: 5%;
+			margin-top: 4px;
+		}
+
+		#trans-container .block .block-text {
+			float: left;
+			display: inline-block;
+			margin-right: 10%;
+		}
+
+		#trans-container .block .block-devider {
+			width: 1%;
+			display: inline-block;
+			margin-left: 10%;
+		}

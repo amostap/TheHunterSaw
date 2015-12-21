@@ -74,7 +74,7 @@
     <Content Include="css\modal.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\header.css" />
-    <Content Include="css\section2.css" />
+    <Content Include="css\test.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\1.png" />
     <Content Include="img\2.png" />
@@ -124,7 +124,6 @@
     <Content Include="img\Target Keywords.png" />
     <Content Include="img\svgs\Treangle.svg" />
     <Content Include="img\tel.png" />
-    <Content Include="img\Untitled-1.jpg" />
     <Content Include="img\Logo.png" />
     <Content Include="img\LogoWizard.png" />
     <Content Include="img\Up button.png" />
