@@ -67,7 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\feedback.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\style.css" />
     <Content Include="css\footer.css" />
