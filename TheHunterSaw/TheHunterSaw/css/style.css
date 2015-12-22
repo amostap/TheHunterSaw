@@ -29,7 +29,7 @@ body {
 
 .container-fluid {
     display: block;
-    margin: 5% 0;
+    margin: 0;
     padding: 0;
     background-position: center center;
     background-size: cover;
