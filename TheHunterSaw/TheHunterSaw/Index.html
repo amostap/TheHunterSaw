@@ -15,11 +15,11 @@
 
     <link href="css/reset.css" rel="stylesheet" />
 
+    <link href="css/test.css" rel="stylesheet" />
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet" />
-
-    <link href="css/header.css" rel="stylesheet" />
 
     <link href="css/header.css" rel="stylesheet" />
 
@@ -40,8 +40,7 @@
 </head>
 
 
-
-<body data-spy="scroll" data-target=".navbar" data-offset="150">
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
 
     <nav class="navbar  navbar-default  navbar-fixed-top">
 
@@ -57,30 +56,66 @@
 
                 <a href="#">
                     <img class="img-responsive" src="img/Logo.png"
-                         alt="LOGO">
+                         alt="Hunter Logo">
                 </a>
 
             </div>
 
-
             <div class="nav collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav  navbar-right" id="phone_numbers">
-                    <li><a href=""> ЗАКАЗАТЬ: </a></li>
-                    <li><button class="btn btn-md btn-info"> +38(066)567-99-89 </button></li>
-                    <li><button class="btn btn-md btn-info"> +38(066)567-99-89 </button></li>
-                    <li><button class="btn btn-md btn-info"> +38(066)567-99-89 </button></li>
-                    <li><button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"> ОБРАТНЫЙ ЗВОНОК </button></li>
+                    <li>
+                        <a id="OrderButton" href=""> ЗАКАЗАТЬ: </a>
+                    </li>
+                    <li>
+                        <button class="btn btn-md btn-info">
+                            <span class="glyphicon glyphicon-phone">
+                            </span> +38 (066) 567-99-89
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-md btn-info">
+                            <span class="glyphicon glyphicon-phone">
+                            </span> +38 (066) 567-99-89
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-md btn-info">
+                            <span class="glyphicon glyphicon-phone">
+                            </span> +38 (066) 567-99-89
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-earphone">
+                            </span>
+                            ОБРАТНЫЙ ЗВОНОК
+                        </button>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#saw">ПИЛЫ</a></li>
-                    <li><a href="#about">О НАС</a></li>
-                    <li><a href="#how">КАК ЗАКАЗАТЬ</a></li>
-                    <li><a href="#adding">ПРЕИМУЩЕСТВА </a></li>
-                    <li><a href="#garanty">ГАРАНТИИ </a></li>
-                    <li><a href="#feedback">ОТЗЫВЫ </a></li>
-                    <li><a href="#contacts">КОНТАКТЫ </a></li>
+                    <li>
+                        <a href="#saw">ПИЛЫ</a>
+                    </li>
+                    <li>
+                        <a href="#about">О НАС</a>
+                    </li>
+                    <li>
+                        <a href="#how">КАК ЗАКАЗАТЬ</a>
+                    </li>
+                    <li>
+                        <a href="#adding">ПРЕИМУЩЕСТВА </a>
+                    </li>
+                    <li>
+                        <a href="#garanty">ГАРАНТИИ </a>
+                    </li>
+                    <li>
+                        <a href="#feedback">ОТЗЫВЫ </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">КОНТАКТЫ </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -103,7 +138,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
 
-                <div class="item active">
+                <div class="item active" id="item1">
 
                     <img src="img/Slide-1.jpg" alt="" />
 
@@ -120,16 +155,16 @@
 
                         <div class="row">
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-saw">
                                 Hunter hs-270
                             </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-text">
                                 по акционной цене:
                             </div>
 
-                            <div class="col-sm-4">
-                                <button class="btn btn-md btn-warning"> 2299 грн</button>
+                            <div class="col-sm-4 in-carusel-iner-button">
+                                <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#myModal"> 2299 грн</button>
                             </div>
                         </div>
 
@@ -137,7 +172,8 @@
 
                 </div>
 
-                <div class="item">
+
+                <div class="item" id="item2">
 
                     <img src="img/Slide-2.jpg" alt="" />
 
@@ -154,16 +190,16 @@
 
                         <div class="row">
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-saw">
                                 Hunter hs-360
                             </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-text">
                                 по акционной цене:
                             </div>
 
-                            <div class="col-sm-4">
-                                <button class="btn btn-md btn-warning"> 2299 грн</button>
+                            <div class="col-sm-4 in-carusel-iner-button">
+                                <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#myModal"> 2299 грн</button>
                             </div>
 
                         </div>
@@ -172,7 +208,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item" id="item3">
 
                     <img src="img/Slide-3.jpg" alt="" />
 
@@ -193,20 +229,20 @@
 
                         <div class="row">
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-saw">
                                 <p>
                                     Hunter hs-420
                                 <p>
                             </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 in-carusel-iner-text">
                                 <p>
                                     по акционной цене:
                                 <p>
                             </div>
 
-                            <div class="col-sm-4">
-                                <button class="btn btn-md btn-warning"> 2299 грн</button>
+                            <div class="col-sm-4 in-carusel-iner-button">
+                                <button class="btn btn-md btn-warning" data-toggle="modal" data-target="#myModal"> 2299 грн</button>
                             </div>
 
                         </div>
@@ -230,6 +266,74 @@
 
         </div>
 
+        <div id="trans-container">
+
+            <div class="row">
+
+                <div class="block">
+
+                    <div class="block-image">
+                        <img class="img-responsive" src="img/Garanty.png" alt="" />
+                    </div>
+
+                    <div class="block-text">
+                        МЕСЯЦЕВ<br>ГАРАНТИИ
+                    </div>
+
+                    <div class="block-devider">
+                        <img src="img/svgs/Divider.svg" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="block">
+
+                    <div class="block-image">
+                        <img class="img-responsive" src="img/New_logo.png" alt="" />
+                    </div>
+
+                    <div class="block-text">
+                        БЕСПЛАТНАЯ<br>ДОСТАВКА
+                    </div>
+
+                    <div class="block-devider">
+                        <img src="img/svgs/Divider.svg" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="block">
+
+                    <div class="block-image">
+                        <img class="img-responsive" src="img/Payment.png" alt="" />
+                    </div>
+
+                    <div class="block-text">
+                        ОПЛАТА ПРИ<br>ПОЛУЧЕНИИ
+                    </div>
+
+                    <div class="block-devider">
+                        <img src="img/svgs/Divider.svg" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="block">
+
+                    <div class="block-image">
+                        <img class="img-responsive" src="img/Adding.png" alt="" />
+                    </div>
+
+                    <div class="block-text">
+                        КОМПЛЕКТАЦИЯ:<br>STIHL,OREGON
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -238,11 +342,14 @@
     <!------------------------------------------------------->
     <div id="saw" class="container-fluid text-center">
 
+        <!-- HEADER -->
         <header>
             <h2 class="h2h">НАШИ ПИЛЫ</h2>
         </header>
 
+        <!-- CONTAINER -->
         <div class="container">
+
             <div class="row">
 
                 <div class="wrapper">
@@ -255,18 +362,21 @@
 
                                 <img src="img/svgs/HS – 270.svg" alt="" />
                                 <img src="img/miniature for button - 270 copy.png" alt="..." />
+
                             </li>
 
                             <li class="tab">
 
                                 <img src="img/svgs/HS – 360.svg" alt="" />
                                 <img src="img/miniature for button - 360.png" alt="..." />
+
                             </li>
 
                             <li class="tab">
 
                                 <img src="img/svgs/HS – 420.svg" alt="" />
                                 <img src="img/miniature for button - 420.png" alt="..." />
+
                             </li>
 
                         </ul>
@@ -277,6 +387,107 @@
 
                         <div class="tab_content">
 
+                            <div class="tab_item">
+
+                                <div class="tab-item-first-row">
+
+                                    <ul>
+                                        <li>
+                                            <img class="saw_svg" src="img/svgs/HS – 270.svg" alt="" />
+                                        </li>
+
+                                        <li>
+                                            Производитель: Hunter
+                                        </li>
+
+                                        <li>
+                                            Страна-производитель: Латвия
+                                        </li>
+
+                                        <li>
+                                            <hr />
+                                        </li>
+
+                                        <li>
+                                            Мощность, кВ/л.с 2,7/3,65
+                                        </li>
+
+                                        <li>
+                                            Объем двигателя, см3 45
+                                        </li>
+
+                                        <li>
+                                            Емкость топливного бака, мл 550
+                                        </li>
+
+                                        <li>
+                                            Максимальные обороты, об/мин 9500
+                                        </li>
+                                        <li>
+                                            Длина шины, см/дюйм 40/16
+                                        </li>
+
+                                        <li>
+                                            Вес, кг 5,1
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="tab-item-image">
+                                    <img src="img/Large 360.png" alt="" />
+                                </div>
+
+                                <div class="tab-item-colections">
+
+
+                                </div>
+
+                                <div class="tab-item-second-row">
+                                    <ol>
+                                        <li>
+                                            Дополнительно:
+                                        </li>
+
+                                        <li>
+                                            Цепь Stihl – для твердых пород дерева
+                                        </li>
+
+                                        <li>
+                                            Шина Oreon
+                                        </li>
+
+                                        <li>
+                                            Праймер – подкачка бензина
+                                        </li>
+
+                                        <li>
+                                            Плавный пуск
+                                        </li>
+
+                                    </ol>
+                                </div>
+
+                                <div class="tab-item-third-row">
+                                    <ul>
+
+                                        <li>
+                                            цена 228 грн
+                                        </li>
+
+                                        <li>
+                                            <button class="btn btn-md btn-warning">
+                                                КУПИТЬ
+                                            </button>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <
                             <div class="tab_item">
 
                                 <table class="table">
@@ -314,6 +525,7 @@
 
                                                 <li>
                                                     Максимальные обороты, об/мин 9500
+                                                </li>
                                                 <li>
                                                     Длина шины, см/дюйм 40/16
                                                 </li>
@@ -403,14 +615,13 @@
             </div>
 
         </div>
-
     </div>
-
 
 
     <!------------------------------------------------------->
     <!-------------------Почему нам доверяют----------------->
     <!------------------------------------------------------->
+
     <div class="container-fluid text-center" id="about">
 
         <header>
@@ -424,11 +635,9 @@
     </div>
 
 
-
-
-
-
-    <!-- Схема работы с нами -->
+    <!------------------------------------------------------->
+    <!-----------------Схема работы с нами------------------->
+    <!------------------------------------------------------->
 
     <div class="container-fluid text-center" id="how">
 
@@ -502,12 +711,8 @@
 
             </div>
         </div>
+
     </div>
-
-
-
-
-
 
 
     <!-- Преймущества -->
@@ -528,22 +733,24 @@
                             <img class="img-responsive" src="img/1.png" alt="" />
                         </td>
                         <td>
-                            <p class="p2">Air Injection – инновационная система очистки воздуха.</p>
-                            <p>
-                                Центробежная система очистки воздуха: снижает износ,
-                                увеличивает промежутки между чистками фильтра.
+                            <p class="p2">
+                                Air Injection – инновационная система очистки воздуха
                             </p>
+                            Центробежная система очистки воздуха: снижает износ,
+                            увеличивает промежутки между чистками фильтра.
+
                         </td>
                         <td>
                             <img class="img-responsive" src="img/2.png" alt="" />
                         </td>
                         <td>
-                            <p class="p2">Картер из сплава алюминия и магния.</p>
-                            <p>
-                                Картер повышенной прочности: создан с учетом профессионального использования
-                                бензопилы на повышенных нагрузках, выдерживает работу на высоких оборотах,
-                                обеспечивает длительный срок службы.
+                            <p class="p2">
+                                Картер из сплава алюминия и магния
                             </p>
+                            Картер повышенной прочности: создан с учетом профессионального использования
+                            бензопилы на повышенных нагрузках, выдерживает работу на высоких оборотах,
+                            обеспечивает длительный срок службы.
+
                         </td>
                     </tr>
 
@@ -554,8 +761,10 @@
                         </td>
 
                         <td>
-                            <p class="p2">Коленчатый вал из трех частей.</p>
-                            <p>Кованый коленчатый вал характеризуется повышенной прочностью и долговечностью.</p>
+                            <p class="p2">
+                                Коленчатый вал из трех частей
+                            </p>
+                            Кованый коленчатый вал характеризуется повышенной прочностью и долговечностью.
                         </td>
 
                         <td>
@@ -564,13 +773,10 @@
 
                         <td>
                             <p class="p2">
-                                AVT - антивибрационная система.
+                                AVT - антивибрационная система
                             </p>
-
-                            <p>
-                                Эффективные антивибрационные элементы поглощают вибрацию, тем
-                                самым защищая руки пользователя от отрицательного воздействия.
-                            </p>
+                            Эффективные антивибрационные элементы поглощают вибрацию, тем
+                            самым защищая руки пользователя от отрицательного воздействия.
 
                         </td>
 
@@ -582,22 +788,20 @@
                         </td>
                         <td>
                             <p class="p2">
-                                Регулируемый масляный насос.
+                                Регулируемый масляный насос
                             </p>
-                            <p>
-                                Обеспечивает эффективную регулировку количества подаваемой смазки цепи в соответствии с потребностями.
-                            </p>
+                            Обеспечивает эффективную регулировку количества подаваемой смазки цепи в соответствии с потребностями.
+
                         </td>
                         <td>
                             <img class="img-responsive" src="img/6.png" alt="" />
                         </td>
                         <td>
                             <p class="p2">
-                                Натяжитель цепи, установленный сбоку на корпусе.
+                                Натяжитель цепи, установленный сбоку на корпусе
                             </p>
-                            <p>
-                                Боковое натяжение цепи обеспечивает легкость и быстроту ее регулирования.
-                            </p>
+                            Боковое натяжение цепи обеспечивает легкость и быстроту ее регулирования.
+
                         </td>
                     </tr>
 
@@ -607,22 +811,20 @@
                         </td>
                         <td>
                             <p class="p2">
-                                Эргономичный захват.
+                                Эргономичный захват
                             </p>
-                            <p>
-                                Передняя рукоятка, расположенная под углом улучшает захват и обеспечивает естественное рабочее положение кистей рук.
-                            </p>
+                            Передняя рукоятка, расположенная под углом улучшает захват и обеспечивает естественное рабочее положение кистей рук.
+
                         </td>
                         <td>
                             <img class="img-responsive" src="img/8.png" alt="" />
                         </td>
                         <td>
                             <p class="p2">
-                                Быстросъемное крепление воздушного фильтра.
+                                Быстросъемное крепление воздушного фильтра
                             </p>
-                            <p>
-                                Данное крепление облегчает замену и чистку воздушного фильтра.
-                            </p>
+                            Данное крепление облегчает замену и чистку воздушного фильтра.
+
                         </td>
                     </tr>
 
@@ -635,10 +837,9 @@
     </div>
 
 
-
-
-    <!-- Гарантии -->
-
+    <!------------------------------------------------------->
+    <!-------------------Почему нам доверяют----------------->
+    <!------------------------------------------------------->
 
     <div class="container-fluid text-center" id="garanty">
 
@@ -667,29 +868,27 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="img/Garantee icon.png" alt="" /> Расходные материалы <strong>всегда в наличии</strong>.
+                                    <img src="img/Garantee icon.png" alt="" /> Расходные материалы <strong>всегда в наличии</strong>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="img/Garantee icon.png" alt="" /> Гарантийное и послегарантийное обслуживание.
+                                    <img src="img/Garantee icon.png" alt="" /> Гарантийное и послегарантийное обслуживание
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="img/Garantee icon.png" alt="" /> Высокое качество и профессионализм гарантийного сервиса.
+                                    <img src="img/Garantee icon.png" alt="" /> Высокое качество и профессионализм гарантийного сервиса
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
-
-
-
-
 
 
     <!-- Отзывы -->
@@ -712,8 +911,11 @@
                 <div class="col-lg-4">
 
                     <div class="containerForm">
+
                         <h2>ОСТАВИТЬ ОТЗЫВ</h2>
+
                         <form role="form">
+
                             Ваша оценка:
                             <input type="text" class="form-control">
                             <div class="form-group">
@@ -725,17 +927,18 @@
                                 <textarea class="form-control" id="userFeedback" rows="3" type="text"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">ОТПРАВИТЬ ОТЗЫВ</button>
+
                         </form>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
-
-
-
-
-
 
     <div id="contacts" class="container-fluid text-center">
 
@@ -757,24 +960,31 @@
                     <table class="table">
 
                         <tr>
-                            <th colspan="2">
-                                Оставте свой номер и мы перезвоним!
-                            </th>
+                            <td colspan="2">
+                                <span class="span-20px">
+                                    Оставте свой номер и мы перезвоним!
+                                </span>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>
-                                +38(067)697-22-10
+                                <div class="button-for-telephone button-for-telephone-left">
+                                    <span>+38</span>
+                                </div>
+                                <div class="button-for-telephone button-for-telephone-right">
+                                    <span>(067) 697-22-10</span>
+                                </div>
                             </td>
                             <td>
-                                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">ОСТАВИТЬ ЗАЯВКУ</button>
+                                <button class="button-for-leave btn btn-success" data-toggle="modal" data-target="#myModal">ЗАКАЗАТЬ ЗВОНОК</button>
                             </td>
                         </tr>
 
                         <tr>
 
                             <td colspan="2">
-                                <span>
+                                <span class="span-16px">
                                     или вы можете связатся с нишими специалистами по одниму из телефонов:
                                 </span>
                             </td>
@@ -783,32 +993,50 @@
 
                         <tr>
                             <td>
-                                +38 (066) 567-99-89
+                                <div class="button-for-telephone button-for-telephone-left">
+                                    <img class="icons-telephone-footer" src="img/Ellipse 3.png" alt="" />
+                                </div>
+                                <div class="button-for-telephone button-for-telephone-right">
+                                    <div>
+                                        +38 (057) 567-99-89
+                                    </div>
+                                </div>
                             </td>
                             <td>
-                                +38 (073) 567-99-89
+                                <div class="button-for-telephone button-for-telephone-left">
+
+                                    <img class="icons-telephone-footer smile" src="img/smile.png" alt="" />
+
+                                </div>
+
+                                <div class="button-for-telephone button-for-telephone-right">+38 (057) 567-99-89</div>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                +38 (096) 567-99-89
+                                <div class="button-for-telephone button-for-telephone-left">
+
+                                    <img class="icons-telephone-footer" src="img/star.png" alt="" />
+                                </div>
+                                <div class="button-for-telephone button-for-telephone-right">
+                                    +38 (057) 567-99-89
+                                </div>
                             </td>
                             <td>
-                                +38 (057) 567-99-89
+                                <div class="button-for-telephone button-for-telephone-left">
+                                    <img class="icons-telephone-footer" src="img/tel.png" alt="" />
+                                </div>
+                                <div class="button-for-telephone button-for-telephone-right">
+                                    +38 (057) 567-99-89
+                                </div>
                             </td>
-                        </tr>
-
-                        <tr>
-                            <th colspan="2">
-                                Наш адрес:
-                            </th>
                         </tr>
 
                         <tr>
                             <td colspan="2">
-                                <span>
-                                    Главный офис: <strong>м.Академика Барабашова, пер.Амурский, офис 200</strong>
+                                <span class="span-20px">
+                                    <strong>Наш адрес:</strong>
                                 </span>
                             </td>
                         </tr>
@@ -816,7 +1044,20 @@
                         <tr>
                             <td colspan="2">
                                 <span>
-                                    Сервисный центр: <strong>ул.Маршала Жукова, Бц Sunsity, офис 350</strong>
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    <span class="span-16px">
+                                        Главный офис: <strong>м.Академика Барабашова, пер.Амурский, офис 200</strong>
+                                    </span>
+                                </span>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    <span span-16px>Сервисный центр: <strong>ул.Маршала Жукова, Бц Sunsity, офис 350</strong></span>
                                 </span>
                             </td>
                         </tr>
@@ -828,52 +1069,99 @@
             </div>
 
         </div>
-
-
-
-        <footer>
-
-            <div class="container">
-
-                <div class="row footerrow">
-
-                    <div class="col-lg-3">
-
-                        <div class="img-responsive">
-
-                            <img src="img/FooterLogo.png" alt="" />
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-                        <strong>HUNTER</strong> ЭКСКЛЮЗИВНОЕ ПРЕДСТАВИТЕЛЬСТВО В УКРАИНЕ<br>1998-2015. ВСЕ ПРАВА ЗАЩИЩЕНЫ
-                    </div>
-
-                    <div class="col-lg-2">
-
-                        <img src="img/LogoWizard.png" alt="" />
-
-                    </div>
-
-                    <div class="col-lg-1">
-
-                        <img src="img/LogoWizardTree.png" alt="Wizard Studio" />
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </footer>
-
     </div>
 
 
 
 
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="row">
+
+            <div class="col-lg-9">
+
+                <div class="navbar navbar-footer navbar-default">
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#saw">ПИЛЫ</a>
+                        </li>
+                        <li>
+                            <a href="#about">О НАС</a>
+                        </li>
+                        <li>
+                            <a href="#how">КАК ЗАКАЗАТЬ</a>
+                        </li>
+                        <li>
+                            <a href="#adding">ПРЕИМУЩЕСТВА </a>
+                        </li>
+                        <li>
+                            <a href="#garanty">ГАРАНТИИ </a>
+                        </li>
+                        <li>
+                            <a href="#feedback">ОТЗЫВЫ </a>
+                        </li>
+                        <li>
+                            <a href="#contacts">КОНТАКТЫ </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2">
+
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal">
+                    <span class="span-uper">оставить заявку</span>
+                </button>
+
+            </div>
+
+            <div class="col-lg-1">
+                <a href="#section1">
+                    <img src="img/Up button.png" alt="up-button" />
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row footerrow">
+
+            <div class="col-lg-3">
+
+                <div class="img-responsive">
+
+                    <img src="img/FooterLogo.png" alt="" />
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <strong>HUNTER</strong>&reg эксклюзивное представительство в украине<br>1998-2015. все права защищены
+            </div>
+
+            <div class="col-lg-2 col-lg-push-2">
+                <a href="#">
+                    <img src="img/LogoWizard.png" alt="Wizard Studio" />
+                </a>
+            </div>
+
+            <div class="col-lg-1 col-lg-push-2">
+
+                <a href="#">
+                    <img src="img/LogoWizardTree.png" alt="Wizard Studio" />
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
     <!-- Modal -->
@@ -899,7 +1187,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">
-                            ОТПРАВИТЬ ЗАПРОС
+                            <span class="span-uper">отправить запрос</span>
                         </button>
 
                     </form>
@@ -913,21 +1201,68 @@
     </div>
 
 
+    <!-- Smooth scrolling navigation -->
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#section1']").on('click', function (event) {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            });
+        })
+    </script>
+
+    <!-- Tabs Second Section -->
+
+    <script>
+        $(".tab_item").not(":first").hide();
+        $(".wrapper .tab").click(function () {
+            $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".tab_item").hide().eq($(this).index()).fadeIn();
+        }).eq(0).addClass("active");
+    </script>
+
+    <!-- GoogleMaps -->
+
     <script>
 
+        var myCenter = new google.maps.LatLng(50.002485, 36.303179);
+
         function initialize() {
+
             var mapProp = {
-                center: new google.maps.LatLng(50.002485, 36.303179),
+                center: myCenter,
                 disableDefaultUI: true,
-                zoom: 19,
-                scrollwheel: false,
-                draggable: false,
+                zoom: 18,
+
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
 
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
 
@@ -937,4 +1272,5 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,84 @@
+﻿
+#saw .tab_item div {
+	border: solid 1px red;
+	padding: 5px;
+	margin: 5px;
+}
+
+.tab-item-first-row {
+	display: block;
+	width: 285px;
+	float: left;
+	position: relative;
+	top: 123px;
+}
+
+.tab-item-image {
+	display: block;
+	position: relative;
+	bottom: 65px;
+	width: 508px;
+	height: 210px;
+	float: right;
+	right: 61px;
+}
+
+.tab-item-second-row {
+	display: block;
+	width: 320px;
+	height: 115px;
+	float: right;
+	position: relative;
+	right: 214px;
+	top: 45px;
+}
+
+.tab-item-third-row {
+	position: relative;
+	display: block;
+	height: 130px;
+	width: 130px;
+	float: inherit;
+	left: 315px;
+	top: 83px;
+}
+
+.saw_svg {
+	background-color: blue;
+	padding: 15px;
+}
+
+.tab-item-colections {
+	display: block;
+	position: relative;
+	float: inherit;
+	/* left: -26px; */
+	/* top: 83px; */
+	height: 150px;
+	width: 300px;
+}
+
+
+.in-carusel-iner-saw {
+	color: red;
+}
+
+.in-carusel-iner-text {
+	color: red;
+}
+
+.in-carusel-iner-button {
+	color: red;
+}
+
+#item1 {
+	
+}
+
+#item2 {
+	
+}
+
+#item3 {
+	
+}

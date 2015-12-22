@@ -14,6 +14,7 @@ html {
 }
 
 
+
 body {
     color: white;
     font-family: 'PT Sans', sans-serif;
@@ -22,27 +23,36 @@ body {
 
 .container-header {
     max-width: 1170px;
-    border: 1px solid yellow;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .container-fluid {
-    border: 1px solid blue;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 0;
-
+    display: block;
+    margin: 5% 0;
+    padding: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
-    border: 1px solid red;
     padding: 15px 0 45px 0;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 
+.span-uper {
+    text-transform: uppercase;
+}
+
+.span-20px {
+    font-size: 20px;
+}
+
+.span-16px {
+    font-size: 16px;
+}
 
 #transparent {
     background: rgb(7, 8, 11);
@@ -63,14 +73,9 @@ body {
 
 
 
+
 #how {
-    background: url('../img/how-it-works-back.jpg') no-repeat center;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    max-width: 100%;
-    height: auto;
+    background-image: url('../img/how-it-works-back.jpg');
 }
 
     #how div {
@@ -78,7 +83,7 @@ body {
         /* margin: 0 auto; */
         vertical-align: middle;
         position: relative;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0 10px 0;
     }
 
     #how table {
@@ -107,49 +112,54 @@ body {
 
     #how .long {
         display: inline;
-        margin: 0 0px 0 0px;
+        margin: 0 0 0 0;
         padding: 0 20px 0 100px;
     }
 
 
+
+
 #adding {
-    background: url('../img/Hunter-benefits-back.jpg') no-repeat center;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    max-width: 100%;
-    height: auto;
+    background-image: url('../img/Hunter-benefits-back.jpg');
 }
 
-    #adding table p {
-        color: white;
-        margin: 5px 3px 3px 2px;
-    }
-
-    #adding table {
-        border-top: none;
-        max-width: 980px;
-        min-height: .01%;
-        overflow-x: auto;
-        margin: 0 auto;
-    }
-
-
-        #adding table tr td {
-            border-top: none;
-            max-width: 333px;
-            padding: 1px 4px 1px 7px;
-        }
-
-    #adding h2 {
-        text-align: center;
-        font-size: 28px;
+    #adding .p2 {
+        padding-bottom: 1px;
     }
 
 .p2 {
     font-weight: 700;
     font-size: 16px;
+}
+
+
+#adding table tr td {
+    border-top: none;
+    max-width: 330px;
+    padding: 11px;
+    text-align: left;
+    font-size: 14px;
+}
+
+    #adding table tr td p {
+        font-size: 14px;
+    }
+
+    #adding table tr td img {
+        width: 125px;
+    }
+
+    #adding table tr td strong {
+        font-size: 16px;
+    }
+
+
+#adding table {
+    border-top: none;
+    max-width: 980px;
+    min-height: .01%;
+    overflow-x: auto;
+    margin: 0 auto;
 }
 
 
@@ -176,7 +186,7 @@ body {
 }
 
     #garanty ul li {
-        padding: 10px 10px 10px 10px;
+        padding: 11px 10px 11px 10px;
     }
 
         #garanty ul li div {
@@ -185,6 +195,7 @@ body {
             -ms-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
+            font-size: 16px;
         }
 
             #garanty ul li div:hover {
@@ -215,12 +226,21 @@ body {
         padding: 5px 5px 5px 5px;
     }
 
+#OrderButton {
+    /* margin: 5px; */
+    padding: 0;
+    border: none;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
 .h2h {
     text-align: center;
     color: white;
     font-size: 28px;
-    margin: 70px 0 60px 0;
     font-weight: 700;
+    position: relative;
+    bottom: 70px;
 }
 
 #pp-nav li .active span, .pp-slidesNav .active span {
@@ -228,8 +248,8 @@ body {
     background: white;
     width: 12px;
     height: 12px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -ms-transition: all 0.35s ease-in-out;
@@ -262,10 +282,62 @@ body {
 
 
 #about {
-    background: url('../img/About-us-back.jpg') no-repeat center;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    max-width: 100%;
+    background-image: url('../img/About-us-back.jpg');
+}
+
+.wrapper .tab_content {
+    background-color: white;
+    color: black;
+    height: 420px;
+    width: 855px;
+    padding: 10px;
+}
+
+.wrapper .tabs .tab {
+    background: #191d29;
+    background: -moz-linear-gradient(left, #191d29 0%, #12131b 100%);
+    background: -webkit-linear-gradient(left, #191d29 0%,#12131b 100%);
+    background: linear-gradient(to right, #191d29 0%,#12131b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d29', endColorstr='#12131b',GradientType=1 );
+    width: 255px;
+    /* margin-top: 5px; */
+    margin-bottom: 4px;
+    height: 137px;
+    /* right: 1px; */
+    left: 15px;
+    position: relative;
+    /* padding: 14px; */
+    padding-top: 14px;
+    padding-left: 16px;
+}
+
+.wrapper .tabs .active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d308a+0,12131b+100 */
+    background: #2d308a; /* Old browsers */
+    background: -moz-linear-gradient(left, #2d308a 0%, #12131b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2d308a 0%,#12131b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2d308a 0%,#12131b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
+}
+
+.wrapper .tabs .tab:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#262b3b+0,12131b+100 */
+    background: #262b3b; /* Old browsers */
+    background: -moz-linear-gradient(left, #262b3b 0%, #12131b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #262b3b 0%,#12131b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #262b3b 0%,#12131b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b3b', endColorstr='#12131b',GradientType=1 ); /* IE6-9 */
+}
+
+
+.wrapper .tabs .active:hover {
+    background: #2d308a; /* Old browsers */
+    background: -moz-linear-gradient(left, #2d308a 0%, #12131b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2d308a 0%,#12131b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2d308a 0%,#12131b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d308a', endColorstr='#12131b',GradientType=1 );
+}
+
+.wrapper .tab_content td {
+    border: none;
 }
