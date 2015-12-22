@@ -5,6 +5,10 @@
 *                   Первый экран                     *
 \****************************************************/
 
+.navbar-nav {
+	max-width: 1170px;
+}
+
 .navbar-default {
 	background: #07080b;
 	background: rgba(7,8,11,1);
@@ -51,11 +55,18 @@
 			background-color: transparent;
 		}
 
-.navbar-nav {
-	max-width: 1170px;
-}
-
-
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover {
+		color: #FFEE02;
+		background-color: transparent;
+		border-bottom: 2px solid #FFEE02;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
 
 
 
@@ -131,19 +142,6 @@
 	padding-left: 0;
 	text-align: center;
 	list-style: none;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-	color: #FFEE02;
-	background-color: transparent;
-	border-bottom: 2px solid #FFEE02;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 }
 
 .carousel-caption {

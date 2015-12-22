@@ -9,8 +9,7 @@
 footer .row {
 	margin: 0 auto;
 	width: 1170px;
-	margin-top: 80px;
-	height: 75px;
+	height: 80px;
 	border-top: solid 2px #202430;
 	margin-bottom: 4px;
 }
@@ -50,22 +49,9 @@ footer .col-lg-4 {
 }
 
 #onGoogleMap table tr td {
-	width: 200px;
-	padding: 7px;
+	width: 190px;
+	padding: 7px 0 7px 3px;
 	border: none;
-}
-
-#onGoogleMap table tr th {
-	padding: 10px;
-	text-align: left;
-	font-size: 20px;
-	font-weight: 700;
-	border: none;
-}
-
-#onGoogleMap table tr td span {
-	text-align: left;
-	font-size: 16px;
 }
 
 #googleMap {
@@ -74,7 +60,7 @@ footer .col-lg-4 {
 }
 
 #onGoogleMap {
-	padding: 20px;
+	padding: 30px;
 	width: 100%;
 	height: 425px;
 	background: #353C45;
@@ -85,6 +71,7 @@ footer .col-lg-4 {
 }
 
 #contacts {
+
 }
 
 	#contacts .col-lg-6 {
@@ -94,31 +81,31 @@ footer .col-lg-4 {
 	}
 
 .button-for-leave {
-	width: 240px;
-	height: 35px;
+	width: 255px;
+	height: 40px;
 	font-size: 18px;
 }
 
 .button-for-telephone {
 	background-color: #353C45;
 	border: 2px solid white;
-	height: 35px;
+	height: 40px;
 	font-weight: 400;
 	color: white;
-	padding: 5px;
+	padding: 6px;
 	position: relative;
 	font-size: 16px;
 }
 
 
 .button-for-telephone-right {
-	width: 210px;
+	width: 215px;
 	border-radius: 0 25px 25px 0;
 	left: 40px;
 }
 
 .button-for-telephone-left {
-	width: 45px;
+	width: 40px;
 	border-radius: 25px 0 0 25px;
 	border-right: none;
 	float: left;
@@ -128,3 +115,60 @@ footer .col-lg-4 {
 	position: relative;
 }
 
+.smile {
+	padding-left: 11px;
+}
+
+.icons-telephone-footer {
+	padding: 0 6px 5px 7px;
+}
+
+.navbar-footer {
+	margin: 0 auto;
+	background: none;
+	z-index: 20;
+	height: 80px;
+	border: none;
+}
+
+	.navbar-footer .navbar-nav > li > a {
+		font-weight: 700;
+		padding-top: 12px;
+		padding-bottom: 10px;
+		text-align: center;
+		color: white;
+		-webkit-transition: color 0.3s ease-in-out;
+		-moz-transition: color 0.3s ease-in-out;
+		-ms-transition: color 0.3s ease-in-out;
+		-o-transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-right: 7px;
+		margin-left: 7px;
+	}
+
+		.navbar-footer .navbar-nav > li > a:focus,
+		.navbar-footer .navbar-nav > li > a:hover {
+			color: #FFEE02;
+			background-color: transparent;
+			border-bottom: solid 2px yellow;
+		}
+
+		.navbar-footer .navbar-nav > li > a:active {
+			color: #FFEE02;
+			background-color: transparent;
+		}
+
+	.navbar-footer.navbar-nav > .active > a,
+	.navbar-footer.navbar-nav > .active > a:focus,
+	.navbar-footer.navbar-nav > .active > a:hover {
+		color: #FFEE02;
+		background-color: transparent;
+	    border-bottom: none;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}

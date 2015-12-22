@@ -91,6 +91,8 @@
     <Content Include="img\FooterLogo.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\LogoWizardTree.png" />
+    <Content Include="img\Slide-1.jpg" />
+    <Content Include="img\Slide-3.jpg" />
     <Content Include="img\smile.png" />
     <Content Include="img\star.png" />
     <Content Include="img\svgs\Divider.svg" />
@@ -117,9 +119,7 @@
     <Content Include="img\New_logo.png" />
     <Content Include="img\svgs\phone_iphone.svg" />
     <Content Include="img\Places Optimizations.png" />
-    <Content Include="img\Slide-1.jpg" />
     <Content Include="img\Slide-2.jpg" />
-    <Content Include="img\Slide-3.jpg" />
     <Content Include="img\Strategy &amp; Consultancy.png" />
     <Content Include="img\Target Keywords.png" />
     <Content Include="img\svgs\Treangle.svg" />
